@@ -1,0 +1,6490 @@
+{
+  "dimensions": {
+    "lon": 720,
+    "lat": 360,
+    "levgrnd": 15,
+    "levlak": 10,
+    "ltype": 9,
+    "natpft": 17,
+    "string_length": 16,
+    "levdcmp": 15,
+    "hist_interval": 2,
+    "time": 1
+  },
+  "variables": {
+    "ACTUAL_IMMOB": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "actual N immobilization",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ACTUAL_IMMOB_P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "actual P immobilization",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ADSORBTION_P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "adsorb P flux",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "AGNPP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "aboveground NPP",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "AGWDNPP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "aboveground wood NPP",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ALT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "current active layer thickness",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ALTMAX": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "maximum annual active layer thickness",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ALTMAX_LASTYEAR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "maximum prior year active layer thickness",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "AR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "autotrophic respiration (MR + GR)",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "AVAILC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "C flux available for allocation",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "AVAIL_RETRANSP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "P flux available from retranslocation pool",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "BAF_CROP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fractional area burned for crop",
+        "units": "proportion/sec",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "BAF_PEATF": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fractional area burned in peatland",
+        "units": "proportion/sec",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "BCDEP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total BC deposition (dry+wet) from atmosphere",
+        "units": "kg/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "BGNPP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "belowground NPP",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "BIOCHEM_PMIN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "biochemical rate of P mineralization",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "BTRAN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "transpiration beta factor",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "BUILDHEAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "heat flux from urban building interior to walls and roof",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CH4PROD": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Gridcell total production of CH4",
+        "units": "gC/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CH4_SURF_AERE_SAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "aerenchyma surface CH4 flux for inundated area; (+ to atm)",
+        "units": "mol/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CH4_SURF_AERE_UNSAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "aerenchyma surface CH4 flux for non-inundated area; (+ to atm)",
+        "units": "mol/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CH4_SURF_DIFF_SAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "diffusive surface CH4 flux for inundated / lake area; (+ to atm)",
+        "units": "mol/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CH4_SURF_DIFF_UNSAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "diffusive surface CH4 flux for non-inundated area; (+ to atm)",
+        "units": "mol/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CH4_SURF_EBUL_SAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "ebullition surface CH4 flux for inundated / lake area; (+ to atm)",
+        "units": "mol/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CH4_SURF_EBUL_UNSAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "ebullition surface CH4 flux for non-inundated area; (+ to atm)",
+        "units": "mol/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "COL_PTRUNC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "column-level sink for P truncation",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CONC_CH4_SAT": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CH4 soil Concentration for inundated / lake area",
+        "units": "mol/m3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CONC_CH4_UNSAT": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CH4 soil Concentration for non-inundated area",
+        "units": "mol/m3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CONC_O2_SAT": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "O2 soil Concentration for inundated / lake area",
+        "units": "mol/m3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CONC_O2_UNSAT": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "O2 soil Concentration for non-inundated area",
+        "units": "mol/m3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CPOOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "temporary photosynthate C pool",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CWD C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDC_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "coarse woody debris C heterotrophic respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDC_LOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "coarse woody debris C loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDC_TO_LITR2C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of coarse woody debris C to litter 2 C",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDC_TO_LITR3C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of coarse woody debris C to litter 3 C",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDC_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CWD C (vertically resolved)",
+        "units": "gC/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CWD N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDN_TO_LITR2N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of coarse woody debris N to litter 2 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDN_TO_LITR3N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of coarse woody debris N to litter 3 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDN_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CWD N (vertically resolved)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CWD P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDP_TO_LITR2P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of coarse woody debris P to litter 2 N",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDP_TO_LITR3P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of coarse woody debris P to litter 3 N",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "CWDP_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CWD P (vertically resolved)",
+        "units": "gP/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DEADCROOTC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "dead coarse root C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DEADCROOTN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "dead coarse root N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DEADCROOTP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "dead coarse root P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DEADSTEMC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "dead stem C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DEADSTEMN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "dead stem N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DEADSTEMP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "dead stem P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DENIT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total rate of denitrification",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DESORPTION_P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "desorp P flux",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DISPVEGC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "displayed veg carbon, excluding storage and cpool",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DISPVEGN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "displayed vegetation nitrogen",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DISPVEGP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "displayed vegetation phosphorus",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DSTDEP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total dust deposition (dry+wet) from atmosphere",
+        "units": "kg/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DSTFLXT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total surface dust emission",
+        "units": "kg/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DWB": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net change in total water mass",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DWT_CONV_CFLUX_DRIBBLED": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "conversion C flux (immediate loss to atm), dribbled throughout the year",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DWT_CONV_CFLUX_GRC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "conversion C flux (immediate loss to atm) (0 at all times except first timestep of year)",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DWT_CONV_NFLUX_GRC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "conversion C flux (immediate loss to atm) (0 at all times except first timestep of year)",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DWT_CONV_PFLUX_GRC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "conversion C flux (immediate loss to atm) (0 at all times except first timestep of year)",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DWT_SLASH_CFLUX": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "slash C flux to litter and CWD due to land use",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DWT_SLASH_NFLUX": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "slash N flux to litter and CWD due to land use",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DWT_SLASH_PFLUX": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "slash P flux to litter and CWD due to land use",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "EFLX_DYNBAL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "dynamic land cover change conversion energy flux",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "EFLX_GRND_LAKE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net heat flux into lake/snow surface, excluding light transmission",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "EFLX_LH_TOT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total latent heat flux [+ to atm]",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "EFLX_LH_TOT_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural total evaporation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "EFLX_LH_TOT_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban total evaporation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ELAI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "exposed one-sided leaf area index",
+        "units": "m^2/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ER": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total ecosystem respiration, autotrophic + heterotrophic",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ERRH2O": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total water conservation error",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ERRH2OSNO": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "imbalance in snow depth (liquid water)",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ERRSEB": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "surface energy conservation error",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ERRSOI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil/lake energy conservation error",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ERRSOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "solar radiation conservation error",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ESAI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "exposed one-sided stem area index",
+        "units": "m^2/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FAREA_BURNED": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "timestep fractional area burned",
+        "units": "proportion",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FCEV": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "canopy evaporation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FCH4": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Gridcell surface CH4 flux to atmosphere (+ to atm)",
+        "units": "kgC/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FCH4TOCO2": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Gridcell oxidation of CH4 to CO2",
+        "units": "gC/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FCH4_DFSAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "CH4 additional flux due to changing fsat, vegetated landunits only",
+        "units": "kgC/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FCOV": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fractional impermeable area",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FCTR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "canopy transpiration",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FGEV": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "ground evaporation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FGR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "heat flux into soil/snow including snow melt and lake / snow light transmission",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FGR12": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "heat flux between soil layers 1 and 2",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FGR_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural heat flux into soil/snow including snow melt and snow light transmission",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FGR_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban heat flux into soil/snow including snow melt",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FH2OSFC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction of ground covered by surface water",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FINUNDATED": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fractional inundated area of vegetated columns",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FINUNDATED_LAG": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "time-lagged inundated fraction of vegetated columns",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FIRA": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net infrared (longwave) radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FIRA_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural net infrared (longwave) radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FIRA_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban net infrared (longwave) radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FIRE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "emitted infrared (longwave) radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FIRE_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural emitted infrared (longwave) radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FIRE_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban emitted infrared (longwave) radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FLDS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric longwave radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPG": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction of potential gpp due to N limitation",
+        "units": "proportion",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPG_P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction of potential gpp due to P limitation",
+        "units": "proportion",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction of potential immobilization of nitrogen",
+        "units": "proportion",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPI_P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction of potential immobilization of phosphorus",
+        "units": "proportion",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPI_P_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction of potential immobilization of phosphorus",
+        "units": "proportion",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPI_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction of potential immobilization of nitrogen",
+        "units": "proportion",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPSN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "photosynthesis",
+        "units": "umol/m2s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPSN_WC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rubisco-limited photosynthesis",
+        "units": "umol/m2s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPSN_WJ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "RuBP-limited photosynthesis",
+        "units": "umol/m2s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FPSN_WP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Product-limited photosynthesis",
+        "units": "umol/m2s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FROOTC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fine root C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FROOTC_ALLOC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fine root C allocation",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FROOTC_LOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fine root C loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FROOTN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fine root N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FROOTP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fine root P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FROST_TABLE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "frost table depth (vegetated landunits only)",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSA": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "absorbed solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fractional area with water table at surface",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSA_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural absorbed solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSA_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban absorbed solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSDS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric incident solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSDSND": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "direct nir incident solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSDSNDLN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "direct nir incident solar radiation at local noon",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSDSNI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "diffuse nir incident solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSDSVD": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "direct vis incident solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSDSVDLN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "direct vis incident solar radiation at local noon",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSDSVI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "diffuse vis incident solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSDSVILN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "diffuse vis incident solar radiation at local noon",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSH": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sensible heat",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSH_G": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sensible heat from ground",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSH_NODYNLNDUSE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sensible heat not including correction for land use change",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSH_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural sensible heat",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSH_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban sensible heat",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSH_V": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sensible heat from veg",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSM": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "snow melt heat flux",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSM_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural snow melt heat flux",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSM_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban snow melt heat flux",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSNO": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction of ground covered by snow",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSNO_EFF": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "effective fraction of ground covered by snow",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "reflected solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSRND": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "direct nir reflected solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSRNDLN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "direct nir reflected solar radiation at local noon",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSRNI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "diffuse nir reflected solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSRVD": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "direct vis reflected solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSRVDLN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "direct vis reflected solar radiation at local noon",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "FSRVI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "diffuse vis reflected solar radiation",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "F_CO2_SOIL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total soil-atm. CO2 exchange",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "F_CO2_SOIL_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total vertically resolved soil-atm. CO2 exchange",
+        "units": "gC/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "F_DENIT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "denitrification flux",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "F_DENIT_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "denitrification flux",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "F_N2O_DENIT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "denitrification N2O flux",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "F_N2O_NIT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "nitrification N2O flux",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "F_NIT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "nitrification flux",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "F_NIT_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "nitrification flux",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "GC_HEAT1": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "initial gridcell total heat content",
+        "units": "J/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "GC_ICE1": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "initial gridcell total ice content",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "GC_LIQ1": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "initial gridcell total liq content",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "GPP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "gross primary production",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "GR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total growth respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "GROSS_NMIN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "gross rate of N mineralization",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "GROSS_PMIN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "gross rate of P mineralization",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "H2OCAN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "intercepted water",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "H2OSFC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "surface water depth",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "H2OSNO": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "snow depth (liquid water)",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "H2OSNO_TOP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mass of snow in top snow layer",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "H2OSOI": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "volumetric soil water (vegetated landunits only)",
+        "units": "mm3/mm3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "HC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "heat content of soil/snow/lake",
+        "units": "MJ/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "HCSOI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil heat content",
+        "units": "MJ/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "HEAT_FROM_AC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sensible heat flux put into canyon due to heat removed from air conditioning",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total heterotrophic respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "HR_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total vertically resolved heterotrophic respiration",
+        "units": "gC/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "HTOP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "canopy top",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "INT_SNOW": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "accumulated swe (vegetated landunits only)",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LABILEP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil Labile P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LABILEP_TO_SECONDP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LABILE P TO SECONDARY MINERAL P",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LABILEP_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil labile P (vert. res.)",
+        "units": "gp/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LAISHA": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "shaded projected leaf area index",
+        "units": "none",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LAISUN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sunlit projected leaf area index",
+        "units": "none",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LAKEICEFRAC": {
+      "shape": ["time", "levlak", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "lake layer ice mass fraction",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LAKEICETHICK": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "thickness of lake ice (including physical expansion on freezing)",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LAND_UPTAKE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "NEE minus LAND_USE_FLUX, negative for update",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LAND_USE_FLUX": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total C emitted from land cover conversion and wood product pools",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LEAFC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "leaf C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LEAFC_ALLOC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "leaf C allocation",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LEAFC_LOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "leaf C loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LEAFC_TO_LITTER": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "leaf C litterfall",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LEAFN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "leaf N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LEAFP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "leaf P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LEAF_MR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "leaf maintenance respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LFC2": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "conversion area fraction of BET and BDT that burned",
+        "units": "per sec",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITFALL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litterfall (leaves and fine roots)",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITHR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter heterotrophic respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR1 C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1C_TO_SOIL1C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 1 C to soil 1 C",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1C_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR1 C (vertically resolved)",
+        "units": "gC/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR1 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1N_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 1 N tendency due to vertical transport",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1N_TO_SOIL1N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 1 N to soil 1 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1N_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR1 N (vertically resolved)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR1 P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1P_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 1 P tendency due to vertical transport",
+        "units": "gP/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1P_TO_SOIL1P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 1 P to soil 1 N",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1P_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR1 P (vertically resolved)",
+        "units": "gP/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR1_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Het. Resp. from litter 1",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR2 C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2C_TO_SOIL2C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 2 C to soil 2 C",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2C_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR2 C (vertically resolved)",
+        "units": "gC/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR2 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2N_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 2 N tendency due to vertical transport",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2N_TO_SOIL2N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 2 N to soil 2 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2N_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR2 N (vertically resolved)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR2 P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2P_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 2 P tendency due to vertical transport",
+        "units": "gP/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2P_TO_SOIL2P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 2 P to soil 2 N",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2P_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR2 P (vertically resolved)",
+        "units": "gP/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR2_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Het. Resp. from litter 2",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR3 C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3C_TO_SOIL3C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 3 C to soil 3 C",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3C_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR3 C (vertically resolved)",
+        "units": "gC/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR3 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3N_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 3 N tendency due to vertical transport",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3N_TO_SOIL3N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 3 N to soil 3 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3N_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR3 N (vertically resolved)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR3 P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3P_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 3 P tendency due to vertical transport",
+        "units": "gP/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3P_TO_SOIL3P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of litter 3 P to soil 3 N",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3P_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "LITR3 P (vertically resolved)",
+        "units": "gP/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITR3_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Het. Resp. from litter 3",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITTERC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITTERC_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter C heterotrophic respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LITTERC_LOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter C loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LIVECROOTC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "live coarse root C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LIVECROOTN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "live coarse root N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LIVECROOTP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "live coarse root P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LIVESTEMC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "live stem C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LIVESTEMN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "live stem N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "LIVESTEMP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "live stem P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "MR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "maintenance respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "M_LITR1C_TO_LEACHING": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 1 C leaching loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "M_LITR2C_TO_LEACHING": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 2 C leaching loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "M_LITR3C_TO_LEACHING": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "litter 3 C leaching loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "M_SOIL1C_TO_LEACHING": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 1 C leaching loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "M_SOIL2C_TO_LEACHING": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 2 C leaching loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "M_SOIL3C_TO_LEACHING": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 3 C leaching loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "M_SOIL4C_TO_LEACHING": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 4 C leaching loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NBP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net biome production, includes fire, landuse, and harvest flux, positive for sink",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NDEPLOY": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total N deployed in new growth",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NDEP_TO_SMINN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric N deposition to soil mineral N",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NEE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net ecosystem exchange of carbon, includes fire, landuse, harvest, and hrv_xsmrpool flux, positive for source",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NEM": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Gridcell net adjustment to NEE passed to atm. for methane production",
+        "units": "gC/m2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NEP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net ecosystem production, excludes fire, landuse, and harvest flux, positive for sink",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NET_NMIN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net rate of N mineralization",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NET_PMIN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net rate of P mineralization",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NFIRE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fire counts valid only in Reg.C",
+        "units": "counts/km2/sec",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NFIX_TO_SMINN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "symbiotic/asymbiotic N fixation to soil mineral N",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "NPP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "net primary production",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "OCCLP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil occluded P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "OCCLP_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil occluded P (vert. res.)",
+        "units": "gp/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "OCDEP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total OC deposition (dry+wet) from atmosphere",
+        "units": "kg/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "O_SCALAR": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "fraction by which decomposition is reduced due to anoxia",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PARVEGLN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "absorbed par by vegetation at local noon",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PBOT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric pressure",
+        "units": "Pa",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PCH4": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric partial pressure of CH4",
+        "units": "Pa",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PCO2": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric partial pressure of CO2",
+        "units": "Pa",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PCT_LANDUNIT": {
+      "shape": ["time", "ltype", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "% of each landunit on grid cell",
+        "units": "%",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PCT_NAT_PFT": {
+      "shape": ["time", "natpft", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "% of each PFT on the natural vegetation (i.e., soil) landunit",
+        "units": "%",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PDEPLOY": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total P deployed in new growth",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PDEP_TO_SMINP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric P deposition to soil mineral P",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PFT_FIRE_CLOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total patch-level fire C loss for non-peat fires outside land-type converted region",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PFT_FIRE_NLOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total pft-level fire N loss",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PLANT_CALLOC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total allocated C flux",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PLANT_NDEMAND": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "N flux required to support initial GPP",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PLANT_NDEMAND_COL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "N flux required to support initial GPP",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PLANT_PALLOC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total allocated P flux",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PLANT_PDEMAND": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "P flux required to support initial GPP",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PLANT_PDEMAND_COL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "P flux required to support initial GPP",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "POTENTIAL_IMMOB": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "potential N immobilization",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "POTENTIAL_IMMOB_P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "potential P immobilization",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "POT_F_DENIT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "potential denitrification flux",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "POT_F_NIT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "potential nitrification flux",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PRIMP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil primary P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PRIMP_TO_LABILEP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "PRIMARY MINERAL P TO LABILE P",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PRIMP_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil primary P (vert. res.)",
+        "units": "gp/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PROD1P_LOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "loss from 1-yr crop product pool",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PSNSHA": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "shaded leaf photosynthesis",
+        "units": "umolCO2/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PSNSHADE_TO_CPOOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "C fixation from shaded canopy",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PSNSUN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sunlit leaf photosynthesis",
+        "units": "umolCO2/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "PSNSUN_TO_CPOOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "C fixation from sunlit canopy",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "Q2M": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "2m specific humidity",
+        "units": "kg/kg",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QBOT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric specific humidity",
+        "units": "kg/kg",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QCHARGE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "aquifer recharge rate (vegetated landunits only)",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QDRAI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sub-surface drainage",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QDRAI_PERCH": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "perched wt drainage",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QDRAI_XS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "saturation excess drainage",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QDRIP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "throughfall",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QFLOOD": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "runoff from river flooding",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QFLX_EVAP_TOT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "qflx_evap_soi + qflx_evap_can + qflx_tran_veg",
+        "units": "mm H2O/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QFLX_ICE_DYNBAL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "ice dynamic land cover change conversion runoff flux",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QFLX_LIQ_DYNBAL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "liq dynamic land cover change conversion runoff flux",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QH2OSFC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "surface water runoff",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QINFL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "infiltration",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QINTR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "interception",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QIRRIG": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "water added through irrigation",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QOVER": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "surface runoff",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QOVER_LAG": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "time-lagged surface runoff for soil columns",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QRGWL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "surface runoff at glaciers (liquid only), wetlands, lakes",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QRUNOFF": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total liquid runoff (does not include QSNWCPICE)",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QRUNOFF_NODYNLNDUSE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total liquid runoff (does not include QSNWCPICE) not including correction for land use change",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QRUNOFF_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural total runoff",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QRUNOFF_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban total runoff",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QSNOMELT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "snow melt",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QSNWCPICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "excess snowfall due to snow capping",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QSNWCPICE_NODYNLNDUSE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "excess snowfall due to snow capping not including correction for land use change",
+        "units": "mm H2O/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QSOIL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Ground evaporation (soil/snow evaporation + soil/snow sublimation - dew)",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QVEGE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "canopy evaporation",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QVEGT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "canopy transpiration",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RAIN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric rain",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RETRANSN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "plant pool of retranslocated N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RETRANSN_TO_NPOOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "deployment of retranslocated N",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RETRANSP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "plant pool of retranslocated P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RETRANSP_TO_PPOOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "deployment of retranslocated P",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RH2M": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "2m relative humidity",
+        "units": "%",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RH2M_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural 2m specific humidity",
+        "units": "%",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RH2M_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban 2m relative humidity",
+        "units": "%",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "root respiration (fine root MR + total root GR)",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SABG": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "solar rad absorbed by ground",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SABG_PEN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural solar rad penetrating top soil or snow layer",
+        "units": "watt/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SABV": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "solar rad absorbed by veg",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SCALARAVG_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "average of decomposition scalar",
+        "units": "fraction",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SECONDP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil secondary P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SECONDP_TO_LABILEP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SECONDARY MINERAL P TO LABILE P",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SECONDP_TO_OCCLP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SECONDARY MINERAL P TO OCCLUDED P",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SECONDP_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil secondary P (vert. res.)",
+        "units": "gp/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SEEDC_GRC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "pool for seeding new PFTs via dynamic landcover",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil mineral N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN_TO_NPOOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "deployment of soil mineral N uptake",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN_TO_PLANT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "plant uptake of soil mineral N",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN_TO_SOIL1N_L1": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral N flux for decomp. of LITR1to SOIL1",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN_TO_SOIL2N_L2": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral N flux for decomp. of LITR2to SOIL2",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN_TO_SOIL2N_S1": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral N flux for decomp. of SOIL1to SOIL2",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN_TO_SOIL3N_L3": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral N flux for decomp. of LITR3to SOIL3",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN_TO_SOIL3N_S2": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral N flux for decomp. of SOIL2to SOIL3",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINN_TO_SOIL4N_S3": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral N flux for decomp. of SOIL3to SOIL4",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil mineral P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_LEACHED": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil mineral P pool loss to leaching",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_TO_PLANT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "plant uptake of soil mineral P",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_TO_PPOOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "deployment of soil mineral P uptake",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_TO_SOIL1P_L1": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral P flux for decomp. of LITR1to SOIL1",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_TO_SOIL2P_L2": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral P flux for decomp. of LITR2to SOIL2",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_TO_SOIL2P_S1": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral P flux for decomp. of SOIL1to SOIL2",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_TO_SOIL3P_L3": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral P flux for decomp. of LITR3to SOIL3",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_TO_SOIL3P_S2": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral P flux for decomp. of SOIL2to SOIL3",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_TO_SOIL4P_S3": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral P flux for decomp. of SOIL3to SOIL4",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMINP_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil mineral P (vert. res.)",
+        "units": "gp/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMIN_NH4": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil mineral NH4",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMIN_NH4_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil mineral NH4 (vert. res.)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMIN_NO3": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil mineral NO3",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMIN_NO3_LEACHED": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil NO3 pool loss to leaching",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMIN_NO3_RUNOFF": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil NO3 pool loss to runoff",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SMIN_NO3_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil mineral NO3 (vert. res.)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOBCMCL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mass of BC in snow column",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOBCMSL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mass of BC in top snow layer",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNODSTMCL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mass of dust in snow column",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNODSTMSL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mass of dust in top snow layer",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOINTABS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Percent of incoming solar absorbed by lower snow layers",
+        "units": "%",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOOCMCL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mass of OC in snow column",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOOCMSL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mass of OC in top snow layer",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOW": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric snow",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOWDP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "gridcell mean snow height",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOWICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "snow ice",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOWLIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "snow liquid water",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOW_DEPTH": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "snow height of snow covered area",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOW_SINKS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "snow sinks (liquid water)",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SNOW_SOURCES": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "snow sources (liquid water)",
+        "units": "mm/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL1 C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1C_TO_SOIL2C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 1 C to soil 2 C",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1C_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL1 C (vertically resolved)",
+        "units": "gC/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL1 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1N_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 1 N tendency due to vertical transport",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1N_TO_SOIL2N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 1 N to soil 2 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1N_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL1 N (vertically resolved)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL1 P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1P_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 1 P tendency due to vertical transport",
+        "units": "gP/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1P_TO_SOIL2P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 1 P to soil 2 N",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1P_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL1 P (vertically resolved)",
+        "units": "gP/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL1_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Het. Resp. from soil 1",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL2 C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2C_TO_SOIL3C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 2 C to soil 3 C",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2C_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL2 C (vertically resolved)",
+        "units": "gC/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL2 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2N_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 2 N tendency due to vertical transport",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2N_TO_SOIL3N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 2 N to soil 3 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2N_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL2 N (vertically resolved)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL2 P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2P_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 2 P tendency due to vertical transport",
+        "units": "gP/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2P_TO_SOIL3P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 2 P to soil 3 N",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2P_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL2 P (vertically resolved)",
+        "units": "gP/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL2_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Het. Resp. from soil 2",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL3 C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3C_TO_SOIL4C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 3 C to soil 4 C",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3C_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL3 C (vertically resolved)",
+        "units": "gC/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL3 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3N_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 3 N tendency due to vertical transport",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3N_TO_SOIL4N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 3 N to soil 4 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3N_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL3 N (vertically resolved)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL3 P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3P_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 3 P tendency due to vertical transport",
+        "units": "gP/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3P_TO_SOIL4P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "decomp. of soil 3 P to soil 4 N",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3P_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL3 P (vertically resolved)",
+        "units": "gP/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL3_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Het. Resp. from soil 3",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4C": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL4 C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4C_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL4 C (vertically resolved)",
+        "units": "gC/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4N": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL4 N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4N_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 4 N tendency due to vertical transport",
+        "units": "gN/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4N_TO_SMINN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral N flux for decomp. of SOIL4",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4N_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL4 N (vertically resolved)",
+        "units": "gN/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4P": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL4 P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4P_TNDNCY_VERT_TRANS": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil 4 P tendency due to vertical transport",
+        "units": "gP/m^3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4P_TO_SMINP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "mineral P flux for decomp. of SOIL4",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4P_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "SOIL4 P (vertically resolved)",
+        "units": "gP/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOIL4_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Het. Resp. from soil 4",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOILC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOILC_HR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil C heterotrophic respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOILC_LOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil C loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOILICE": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil ice (vegetated landunits only)",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOILLIQ": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil liquid water (vegetated landunits only)",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOILPSI": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil water potential in each soil layer",
+        "units": "MPa",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOILWATER_10CM": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil liquid water + ice in top 10cm of soil (veg landunits only)",
+        "units": "kg/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOLUTIONP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil solution P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOLUTIONP_vr": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil solution P (vert. res.)",
+        "units": "gp/m^3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOMHR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil organic matter heterotrophic respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SOM_C_LEACHED": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total flux of C from SOM pools due to leaching",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total soil respiration (HR + root resp)",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "STORVEGC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "stored vegetation carbon, excluding cpool",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "STORVEGN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "stored vegetation nitrogen",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "STORVEGP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "stored vegetation phosphorus",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SUPPLEMENT_TO_SMINN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "supplemental N supply",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SUPPLEMENT_TO_SMINP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "supplemental P supply",
+        "units": "gP/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SoilAlpha": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "factor limiting ground evap",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "SoilAlpha_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "urban factor limiting ground evap",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TAUX": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "zonal surface stress",
+        "units": "kg/m/s^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TAUY": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "meridional surface stress",
+        "units": "kg/m/s^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TBOT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric air temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TBUILD": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "internal urban building temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TG": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "ground temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TG_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural ground temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TG_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban ground temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TH2OSFC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "surface water temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "THBOT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric air potential temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TKE1": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "top lake level eddy thermal conductivity",
+        "units": "W/(mK)",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TLAI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total projected leaf area index",
+        "units": "none",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TLAKE": {
+      "shape": ["time", "levlak", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "lake temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTCOLC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total column carbon, incl veg and cpool but excl product pools",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTCOLCH4": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total belowground CH4, (0 for non-lake special landunits)",
+        "units": "gC/m2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTCOLN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total column-level N but excl product pools",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTCOLP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total column-level P but excl product pools",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTECOSYSC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total ecosystem carbon, incl veg but excl cpool but excl product pools",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTECOSYSN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total ecosystem N but excl product pools",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTECOSYSP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total ecosystem P but excl product pools",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTLITC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total litter carbon",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTLITC_1m": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total litter carbon to 1 meter depth",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTLITN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total litter N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTLITP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total litter P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTLITP_1m": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total litter P to 1 meter",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTPFTC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total patch-level carbon, including cpool",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTPFTN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total PFT-level nitrogen",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTPFTP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total PFT-level phosphorus",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTSOMC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total soil organic matter carbon",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTSOMC_1m": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total soil organic matter carbon to 1 meter depth",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTSOMN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total soil organic matter N",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTSOMP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total soil organic matter P",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTSOMP_1m": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total soil organic matter P to 1 meter",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTVEGC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total vegetation carbon, excluding cpool",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTVEGC_ABG": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total aboveground vegetation carbon, excluding cpool",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTVEGN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total vegetation nitrogen",
+        "units": "gN/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTVEGP": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total vegetation phosphorus",
+        "units": "gP/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TREFMNAV": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "daily minimum of average 2-m temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TREFMNAV_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural daily minimum of average 2-m temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TREFMNAV_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban daily minimum of average 2-m temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TREFMXAV": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "daily maximum of average 2-m temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TREFMXAV_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural daily maximum of average 2-m temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TREFMXAV_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban daily maximum of average 2-m temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TSA": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "2m air temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TSAI": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total projected stem area index",
+        "units": "none",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TSA_R": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Rural 2m air temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TSA_U": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Urban 2m air temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TSOI": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil temperature (vegetated landunits only)",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TSOI_10CM": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil temperature in top 10cm of soil",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TSOI_ICE": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil temperature (ice landunits only)",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TV": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "vegetation temperature",
+        "units": "K",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TWS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total water storage",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TWS_MONTH_BEGIN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total water storage at the beginning of a month",
+        "units": "mm",
+        "cell_methods": "time: instantaneous",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TWS_MONTH_END": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total water storage at the end of a month",
+        "units": "mm",
+        "cell_methods": "time: instantaneous",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "T_SCALAR": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "temperature inhibition of decomposition",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "U10": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "10-m wind",
+        "units": "m/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "URBAN_AC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "urban air conditioning flux",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "URBAN_HEAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "urban heating flux",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "VOLR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "river channel total water storage",
+        "units": "m3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "VOLRMCH": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "river channel main channel water storage",
+        "units": "m3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WA": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "water in the unconfined aquifer (vegetated landunits only)",
+        "units": "mm",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WASTEHEAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "sensible heat flux from heating/cooling sources of urban waste heat",
+        "units": "W/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WF": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "soil water as frac. of whc for top 0.05 m",
+        "units": "proportion",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WIND": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric wind velocity magnitude",
+        "units": "m/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WOODC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "wood C",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WOODC_ALLOC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "wood C eallocation",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WOODC_LOSS": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "wood C loss",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WOOD_HARVESTC": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "wood harvest carbon (to product pools)",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WOOD_HARVESTN": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "wood harvest N (to product pools)",
+        "units": "gN/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "WTGQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "surface tracer conductance",
+        "units": "m/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "W_SCALAR": {
+      "shape": ["time", "levdcmp", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "Moisture (dryness) inhibition of decomposition",
+        "units": "unitless",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "XR": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "total excess respiration",
+        "units": "gC/m^2/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "XSMRPOOL": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "temporary photosynthate C pool",
+        "units": "gC/m^2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ZBOT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "atmospheric reference height",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ZWT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "water table depth (vegetated landunits only)",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ZWT_CH4_UNSAT": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "depth of water table for methane production used in non-inundated area",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "ZWT_PERCH": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "perched water table depth (vegetated landunits only)",
+        "units": "m",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "area": {
+      "shape": ["lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "grid cell areas",
+        "units": "km^2",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "cn_scalar": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "N limitation factor",
+        "units": "",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "cp_scalar": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "P limitation factor",
+        "units": "",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "date_written": {
+      "shape": ["time", "string_length"],
+      "type": "char",
+      "data":[]
+    },
+    "landfrac": {
+      "shape": ["lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "land fraction",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "landmask": {
+      "shape": ["lat", "lon"],
+      "type": "int",
+      "attributes": {
+        "long_name": "land/ocean mask (0.=ocean and 1.=land)",
+        "_FillValue": -9999,
+        "missing_value": -9999
+      },
+      "data":[]
+    },
+    "lat": {
+      "shape": ["lat"],
+      "type": "float",
+      "attributes": {
+        "long_name": "coordinate latitude",
+        "units": "degrees_north",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "leaf_npimbalance": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "leaf np imbalance partial C partial P/partial C partial N",
+        "units": "gN/gP",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "levdcmp": {
+      "shape": ["levdcmp"],
+      "type": "float",
+      "attributes": {
+        "long_name": "coordinate soil levels",
+        "units": "m"
+      },
+      "data":[]
+    },
+    "levgrnd": {
+      "shape": ["levgrnd"],
+      "type": "float",
+      "attributes": {
+        "long_name": "coordinate soil levels",
+        "units": "m"
+      },
+      "data":[]
+    },
+    "levlak": {
+      "shape": ["levlak"],
+      "type": "float",
+      "attributes": {
+        "long_name": "coordinate lake levels",
+        "units": "m"
+      },
+      "data":[]
+    },
+    "lon": {
+      "shape": ["lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "coordinate longitude",
+        "units": "degrees_east",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "mcdate": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current date (YYYYMMDD)"
+      },
+      "data":[]
+    },
+    "mcsec": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current seconds of current date",
+        "units": "s"
+      },
+      "data":[]
+    },
+    "mdcur": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current day (from base day)"
+      },
+      "data":[]
+    },
+    "mscur": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current seconds of current day"
+      },
+      "data":[]
+    },
+    "nlim_m": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "runmean N limitation factor",
+        "units": "",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "nstep": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "time step"
+      },
+      "data":[]
+    },
+    "o2_decomp_depth_unsat": {
+      "shape": ["time", "levgrnd", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "o2_decomp_depth_unsat",
+        "units": "mol/m3/2",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "pftmask": {
+      "shape": ["lat", "lon"],
+      "type": "int",
+      "attributes": {
+        "long_name": "pft real/fake mask (0.=fake and 1.=real)",
+        "_FillValue": -9999,
+        "missing_value": -9999
+      },
+      "data":[]
+    },
+    "plim_m": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "runmean P limitation factor",
+        "units": "",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "time": {
+      "shape": ["time"],
+      "type": "float",
+      "attributes": {
+        "long_name": "time",
+        "units": "days since 1850-01-01 00:00:00",
+        "calendar": "noleap",
+        "bounds": "time_bounds"
+      },
+      "data":[]
+    },
+    "time_bounds": {
+      "shape": ["time", "hist_interval"],
+      "type": "double",
+      "attributes": {
+        "long_name": "history time interval endpoints"
+      },
+      "data":[]
+    },
+    "time_written": {
+      "shape": ["time", "string_length"],
+      "type": "char",
+      "data":[]
+    },
+    "topo": {
+      "shape": ["lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "grid cell topography",
+        "units": "m",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    }
+  },
+  "attributes": {
+    "title": "CLM History file information",
+    "comment": "NOTE: None of the variables are weighted by land fraction!",
+    "Conventions": "CF-1.0",
+    "history": "created on 03/24/19 15:28:46",
+    "source": "Community Land Model CLM4.0",
+    "hostname": "edison",
+    "username": "shix",
+    "version": "f6bae5d46",
+    "revision_id": "$Id: histFileMod.F90 42903 2012-12-21 15:32:10Z muszala $",
+    "case_title": "UNSET",
+    "case_id": "20190319_gspwv2_hcru_hcru_S6_hcru_hcru_ICB20TRCNPRDCTCBC",
+    "Surface_dataset": "surfdata.nc",
+    "Initial_conditions_dataset": "20190219_gswp3v2_hcru_hcru_ICB1850CNPRDCTCBC.clm2.r.0601-01-01-00000.nc",
+    "PFT_physiological_constants_dataset": "clm_params.nc",
+    "ltype_vegetated_or_bare_soil": 1,
+    "ltype_crop": 2,
+    "ltype_landice": 3,
+    "ltype_landice_multiple_elevation_classes": 4,
+    "ltype_deep_lake": 5,
+    "ltype_wetland": 6,
+    "ltype_urban_tbd": 7,
+    "ltype_urban_hd": 8,
+    "ltype_urban_md": 9,
+    "Time_constant_3Dvars_filename": "./20190319_gspwv2_hcru_hcru_S6_hcru_hcru_ICB20TRCNPRDCTCBC.clm2.h0.1850-01.nc",
+    "Time_constant_3Dvars": "ZSOI:DZSOI:WATSAT:SUCSAT:BSW:HKSAT:ZLAKE:DZLAKE"
+  }
+}

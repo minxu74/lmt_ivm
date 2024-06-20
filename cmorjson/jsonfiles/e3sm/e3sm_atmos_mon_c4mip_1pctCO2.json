@@ -1,0 +1,4944 @@
+{
+  "dimensions": {
+    "ncol": 48602,
+    "time": 1,
+    "nbnd": 2,
+    "chars": 8,
+    "cosp_prs": 7,
+    "cosp_tau": 7,
+    "cosp_scol": 10,
+    "cosp_ht": 40,
+    "cosp_sr": 15,
+    "cosp_sza": 5,
+    "cosp_htmisr": 16,
+    "cosp_tau_modis": 6,
+    "lev": 72,
+    "ilev": 73
+  },
+  "variables": {
+    "AEROD_v": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "units": "1",
+        "long_name": "Total Aerosol Optical Depth in visible band",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODABS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol absorption optical depth 550 nm",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODABSBC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol absorption optical depth 550 nm from BC",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODBC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm from BC",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODDUST": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm from dust",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODDUST1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm model 1 from dust",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODDUST3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm model 3 from dust",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODDUST4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm model 4 from dust",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODMODE1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm mode 1",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODMODE2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm mode 2",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODMODE3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm mode 3",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODMODE4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm mode 4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODNIR": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 850 nm",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODPOM": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm from POM",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODSO4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm from SO4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODSOA": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm from SOA",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODSS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm from seasalt",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODUV": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 350 nm",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AODVIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol optical depth 550 nm",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AQSO4_H2O2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "SO4 aqueous phase chemistry due to H2O2",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AQSO4_O3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "SO4 aqueous phase chemistry due to O3",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AQ_DMS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "DMS aqueous chemistry (for gas species)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AQ_H2O2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "H2O2 aqueous chemistry (for gas species)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AQ_H2SO4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "H2SO4 aqueous chemistry (for gas species)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AQ_O3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "O3 aqueous chemistry (for gas species)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AQ_SO2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "SO2 aqueous chemistry (for gas species)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AQ_SOAG": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "SOAG aqueous chemistry (for gas species)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AREI": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "Micron",
+        "long_name": "Average ice effective radius",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AREL": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "Micron",
+        "long_name": "Average droplet effective radius",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AWNC": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m-3",
+        "long_name": "Average cloud water number conc",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "AWNI": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m-3",
+        "long_name": "Average cloud ice number conc",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CCN3": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "#/cm3",
+        "long_name": "CCN concentration at S=0.1%",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CDNUMC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "1/m2",
+        "long_name": "Vertically-integrated droplet concentration",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDHGH": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Vertically-integrated high cloud",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDHGH_CAL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar High-level Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDHGH_CAL_ICE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar High-level Ice Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDHGH_CAL_LIQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar High-level Liquid Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDHGH_CAL_UN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar High-level Undefined-Phase Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDICE": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "Grid box averaged cloud ice amount",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDLIQ": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "Grid box averaged cloud liquid amount",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDLOW": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Vertically-integrated low cloud",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDLOW_CAL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Low-level Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDLOW_CAL_ICE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Low-level Ice Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDLOW_CAL_LIQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Low-level Liquid Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDLOW_CAL_UN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Low-level Undefined-Phase Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDMED": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Vertically-integrated mid-level cloud",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDMED_CAL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Mid-level Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDMED_CAL_ICE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Mid-level Ice Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDMED_CAL_LIQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Mid-level Liquid Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDMED_CAL_UN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Mid-level Undefined-Phase Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDTOT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Vertically-integrated total cloud",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDTOT_CAL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Total Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDTOT_CAL_ICE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Total Ice Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDTOT_CAL_LIQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Total Liquid Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDTOT_CAL_UN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Lidar Total Undefined-Phase Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLDTOT_ISCCP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Total Cloud Fraction Calculated by the ISCCP Simulator",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLD_MISR": {
+      "shape": ["time", "cosp_htmisr", "cosp_tau", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": [2, 7],
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Cloud Fraction from MISR Simulator",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLHMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "%",
+        "long_name": "MODIS High Level Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLIMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "%",
+        "long_name": "MODIS Ice Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLLMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "%",
+        "long_name": "MODIS Low Level Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLMMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "%",
+        "long_name": "MODIS Mid Level Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLMODIS": {
+      "shape": ["time", "cosp_prs", "cosp_tau_modis", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": [8, 1],
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "%",
+        "long_name": "MODIS Cloud Area Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLOUD": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction",
+        "long_name": "Cloud fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLOUDFRAC_CLUBB": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction",
+        "long_name": "Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLTMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "%",
+        "long_name": "MODIS Total Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CLWMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "%",
+        "long_name": "MODIS Liquid Cloud Fraction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CO2": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "CO2",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CO2_FFF": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "CO2_FFF",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CO2_LND": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "CO2_LND",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CO2_OCN": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "CO2_OCN",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "CONCLD": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction",
+        "long_name": "Convective cloud cover",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DCQ": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg/s",
+        "long_name": "Q tendency due to moist processes",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DF_DMS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dry deposition flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DF_H2O2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dry deposition flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DF_H2SO4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dry deposition flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DF_O3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dry deposition flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DF_SO2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dry deposition flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DF_SOAG": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dry deposition flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DMS_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "mol/mol",
+        "long_name": "DMS in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DP_KCLDBASE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "1",
+        "long_name": "Deep conv. cloudbase level index",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DP_MFUP_MAX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "Deep conv. column-max updraft mass flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DP_WCLDBASE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Deep conv. cloudbase vertical velocity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DSTSFMBL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Mobilization flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DTCOND": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "K/s",
+        "long_name": "T tendency - moist processes",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DTENDTH": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "W/m2",
+        "long_name": "Dynamic Tendency of Total (vertically integrated) moist static energy",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "DTENDTQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Dynamic Tendency of Total (vertically integrated) specific humidity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "EXTINCT": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "units": "/m",
+        "long_name": "Aerosol extinction",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FICE": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction",
+        "long_name": "Fractional ice content within cloud",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FISCCP1_COSP": {
+      "shape": ["time", "cosp_prs", "cosp_tau", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": [2, 1],
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "percent",
+        "long_name": "Grid-box fraction covered by each ISCCP D level cloud type",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FLDS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Downwelling longwave flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FLNS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Net longwave flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FLNSC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Clearsky net longwave flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FLNT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Net longwave flux at top of model",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FLNTC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Clearsky net longwave flux at top of model",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FLUT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Upwelling longwave flux at top of model",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FLUTC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Clearsky upwelling longwave flux at top of model",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FREQI": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction",
+        "long_name": "Fractional occurrence of ice",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FREQL": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction",
+        "long_name": "Fractional occurrence of liquid",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FREQR": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction",
+        "long_name": "Fractional occurrence of rain",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FREQS": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction",
+        "long_name": "Fractional occurrence of snow",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSDS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Downwelling solar flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSDSC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Clearsky downwelling solar flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSNS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Net solar flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSNSC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Clearsky net solar flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSNT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Net solar flux at top of model",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSNTC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Clearsky net solar flux at top of model",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSNTOA": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Net solar flux at top of atmosphere",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSNTOAC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Clearsky net solar flux at top of atmosphere",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSUTOA": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Upwelling solar flux at top of atmosphere",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "FSUTOAC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Clearsky upwelling solar flux at top of atmosphere",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "F_eff": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "1",
+        "long_name": "Effective enrichment factor of marine organic matter",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "H2O2_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "mol/mol",
+        "long_name": "H2O2 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "H2SO4_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "mol/mol",
+        "long_name": "H2SO4 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "H2SO4_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "H2SO4 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ICEFRAC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Fraction of sfc area covered by sea-ice",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ICIMR": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "Prognostic in-cloud ice mixing ratio",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ICWMR": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "Prognostic in-cloud water mixing ratio",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "IEFLX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "W/m2",
+        "long_name": "Implied internal energy flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "IWC": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/m3",
+        "long_name": "Grid box average ice water content",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "IWPMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "kg m-2",
+        "long_name": "MODIS Cloud Ice Water Path*CLIMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LANDFRAC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Fraction of sfc area covered by land",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LHFLX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "W/m2",
+        "long_name": "Surface latent heat flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LINOZ_DO3": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "/s",
+        "long_name": "ozone vmr tendency by linearized ozone chemistry",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LINOZ_DO3_PSC": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "/s",
+        "long_name": "ozone vmr loss by PSCs using Carille et al. (1990)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LINOZ_O3CLIM": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "mol/mol",
+        "long_name": "climatology of ozone in LINOZ",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LINOZ_O3COL": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "DU",
+        "long_name": "ozone column above",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LINOZ_SSO3": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg",
+        "long_name": "steady state ozone in LINOZ",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LINOZ_SZA": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "degrees",
+        "long_name": "solar zenith angle in LINOZ",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LND_MBL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "frac",
+        "long_name": "Soil erodibility factor",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LWCF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Longwave cloud forcing",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "LWPMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "kg m-2",
+        "long_name": "MODIS Cloud Liquid Water Path*CLWMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "MEANCLDALB_ISCCP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "1",
+        "long_name": "Mean cloud albedo*CLDTOT_ISCCP",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "MEANPTOP_ISCCP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "Pa",
+        "long_name": "Mean cloud top pressure*CLDTOT_ISCCP",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "MEANTAU_ISCCP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "1",
+        "long_name": "Mean optical thickness*CLDTOT_ISCCP",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "MEANTBCLR_ISCCP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "K",
+        "long_name": "Mean Clear-sky Infrared Tb from ISCCP simulator",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "MEANTB_ISCCP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "K",
+        "long_name": "Mean Infrared Tb from ISCCP simulator",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Mass_bc": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "sum of bc mass concentration bc_a1+bc_c1+bc_a3+bc_c3+bc_a4+bc_c4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Mass_dst": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "sum of dst mass concentration dst_a1+dst_c1+dst_a3+dst_c3",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Mass_mom": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "sum of mom mass concentration mom_a1+mom_c1+mom_a2+mom_c2+mom_a3+mom_c3+mom_a4+mom_c4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Mass_ncl": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "sum of ncl mass concentration ncl_a1+ncl_c1+ncl_a2+ncl_c2+ncl_a3+ncl_c3",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Mass_pom": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "sum of pom mass concentration pom_a1+pom_c1+pom_a3+pom_c3+pom_a4+pom_c4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Mass_so4": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "sum of so4 mass concentration so4_a1+so4_c1+so4_a2+so4_c2+so4_a3+so4_c3",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Mass_soa": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "sum of soa mass concentration soa_a1+soa_c1+soa_a2+soa_c2+soa_a3+soa_c3",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "NUMICE": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "1/kg",
+        "long_name": "Grid box averaged cloud ice number",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "NUMLIQ": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "1/kg",
+        "long_name": "Grid box averaged cloud liquid number",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "NUMRAI": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "1/kg",
+        "long_name": "Grid box averaged rain number",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "NUMSNO": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "1/kg",
+        "long_name": "Grid box averaged snow number",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "O3": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "mol/mol",
+        "long_name": "O3 concentration",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "O3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "mol/mol",
+        "long_name": "O3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "OCNFRAC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Fraction of sfc area covered by ocean",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "OMEGA": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "Pa/s",
+        "long_name": "Vertical velocity (pressure)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "OMEGA500": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "Pa/s",
+        "long_name": "Vertical velocity at 500 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "OMEGAT": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "K Pa/s",
+        "long_name": "Vertical heat flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "P0": {
+      "type": "double",
+      "attributes": {
+        "long_name": "reference pressure",
+        "units": "Pa"
+      },
+      "data":[]
+    },
+    "PBLH": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m",
+        "long_name": "PBL height",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PCTMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "Pa",
+        "long_name": "MODIS Cloud Top Pressure*CLTMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PHIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m2/s2",
+        "long_name": "Surface geopotential",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PRECC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Convective precipitation rate (liq + ice)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PRECL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Large-scale (stable) precipitation rate (liq + ice)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PRECSC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Convective snow rate (water equivalent)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PRECSL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Large-scale (stable) snow rate (water equivalent)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PRECT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Total (convective and large-scale) precipitation rate (liq + ice)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "Pa",
+        "long_name": "Surface pressure",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PSL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "Pa",
+        "long_name": "Sea level pressure",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Q": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "Specific humidity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "QFLX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Surface water flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "QREFHT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "Reference height humidity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "QRL": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "K/s",
+        "long_name": "Longwave heating rate",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "QRS": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "K/s",
+        "long_name": "Solar heating rate",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "RAINQM": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "kg/kg",
+        "long_name": "Grid box averaged rain amount",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "RAM1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "frac",
+        "long_name": "RAM1",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "REFFCLIMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "m",
+        "long_name": "MODIS Ice Cloud Particle Size*CLIMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "REFFCLWMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "m",
+        "long_name": "MODIS Liquid Cloud Particle Size*CLWMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "RELHUM": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "percent",
+        "long_name": "Relative humidity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "RHREFHT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Reference height relative humidity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFCO2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "CO2 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFCO2_FFF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "CO2_FFF surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFCO2_LND": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "CO2_LND surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFCO2_OCN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "CO2_OCN surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFDMS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "DMS surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFH2O2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "H2O2 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFH2SO4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "H2SO4 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFO3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "O3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFSO2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "SO2 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFSOAG": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "SOAG surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFbc_a1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_a1 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFbc_a3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_a3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFbc_a4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_a4 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFdst_a1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_a1 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFdst_a3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_a3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFmom_a1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a1 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFmom_a2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a2 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFmom_a3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFmom_a4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a4 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFncl_a1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a1 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFncl_a2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a2 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFncl_a3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFnum_a1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_a1 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFnum_a2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_a2 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFnum_a3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_a3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFnum_a4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_a4 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFpom_a1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_a1 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFpom_a3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_a3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFpom_a4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_a4 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFso4_a1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a1 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFso4_a2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a2 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFso4_a3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFsoa_a1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a1 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFsoa_a2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a2 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SFsoa_a3": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a3 surface flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SHFLX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "W/m2",
+        "long_name": "Surface sensible heat flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SH_KCLDBASE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "1",
+        "long_name": "Shallow conv. cloudbase level index",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SH_MFUP_MAX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "Shallow conv. column-max updraft mass flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SH_WCLDBASE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Shallow conv. cloudbase vertical velocity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SNOWHICE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m",
+        "long_name": "Snow depth over ice",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SNOWHLND": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m",
+        "long_name": "Water equivalent snow depth",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SO2": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "mol/mol",
+        "long_name": "SO2 concentration",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SO2_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for SO2",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SO2_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "mol/mol",
+        "long_name": "SO2 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SOAG_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for SOAG",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SOAG_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "mol/mol",
+        "long_name": "SOAG in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SOAG_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "SOAG gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SOLIN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Solar insolation",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SSAVIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "long_name": "Aerosol singel-scatter albedo",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SSTSFMBL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Mobilization flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SSTSFMBL_OM": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Mobilization flux of marine organic matter at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SWCF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Shortwave cloud forcing",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "T": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "K",
+        "long_name": "Temperature",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUGWX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "N/m2",
+        "long_name": "Zonal gravity wave surface stress",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUGWY": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "N/m2",
+        "long_name": "Meridional gravity wave surface stress",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUILOGMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "1",
+        "long_name": "MODIS Ice Cloud Optical Thickness (Log10 Mean)*CLIMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUIMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "1",
+        "long_name": "MODIS Ice Cloud Optical Thickness*CLIMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUTLOGMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "1",
+        "long_name": "MODIS Total Cloud Optical Thickness (Log10 Mean)*CLTMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUTMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "1",
+        "long_name": "MODIS Total Cloud Optical Thickness*CLTMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUWLOGMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "1",
+        "long_name": "MODIS Liquid Cloud Optical Thickness (Log10 Mean)*CLWMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUWMODIS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": -1.0e+30,
+        "missing_value": -1.0e+30,
+        "units": "1",
+        "long_name": "MODIS Liquid Cloud Optical Thickness*CLWMODIS",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "N/m2",
+        "long_name": "Zonal surface stress",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TAUY": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "N/m2",
+        "long_name": "Meridional surface stress",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TGCLDCWP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "Total grid-box cloud water path (liquid and ice)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TGCLDIWP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "Total grid-box cloud ice water path",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TGCLDLWP": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "Total grid-box cloud liquid water path",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TH7001000": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Theta difference 700 mb - 1000 mb",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TMCO2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "CO2 column burden",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TMCO2_FFF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "CO2_FFF column burden",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TMCO2_LND": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "CO2_LND column burden",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TMCO2_OCN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "CO2_OCN column burden",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TMQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "Total (vertically integrated) precipitable water",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TREFHT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Reference height temperature",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TREFHTMN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Minimum reference height temperature over output period",
+        "cell_methods": "time: minimum"
+      },
+      "data":[]
+    },
+    "TREFHTMX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Maximum reference height temperature over output period",
+        "cell_methods": "time: maximum"
+      },
+      "data":[]
+    },
+    "TROP_P": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "units": "Pa",
+        "long_name": "Tropopause Pressure",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TROP_T": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36,
+        "units": "K",
+        "long_name": "Tropopause Temperature",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Surface temperature (radiative)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TSMN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Minimum surface temperature over output period",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TSMX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Maximum surface temperature over output period",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TUH": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "W/m",
+        "long_name": "Total (vertically integrated) zonal MSE flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TUQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m/s",
+        "long_name": "Total (vertically integrated) zonal water flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TVH": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "W/m",
+        "long_name": "Total (vertically integrated) meridional MSE flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TVQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m/s",
+        "long_name": "Total (vertically integrated) meridional water flux",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "U": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m/s",
+        "long_name": "Zonal wind",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "U10": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "10m wind speed",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "U200": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Zonal wind at 200 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "U850": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Zonal wind at 850 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "UU": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m2/s2",
+        "long_name": "Zonal velocity squared",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "V": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m/s",
+        "long_name": "Meridional wind",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "VQ": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m/skg/kg",
+        "long_name": "Meridional water transport",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "VT": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "K m/s",
+        "long_name": "Meridional heat transport",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "VU": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m2/s2",
+        "long_name": "Meridional flux of zonal momentum",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "VV": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m2/s2",
+        "long_name": "Meridional velocity squared",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "WD_H2O2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/s",
+        "long_name": "H2O2             wet deposition",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "WD_H2SO4": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/s",
+        "long_name": "H2SO4            wet deposition",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "WD_SO2": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/s",
+        "long_name": "SO2              wet deposition",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "WSUB": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m/s",
+        "long_name": "Diagnostic sub-grid vertical velocity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Z3": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m",
+        "long_name": "Geopotential Height (above sea level)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "aero_water": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "m",
+        "long_name": "sum of aerosol water of interstitial modes wat_a1+wat_a2+wat_a3+wat_a4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "airFV": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "frac",
+        "long_name": "FV",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "area": {
+      "shape": ["ncol"],
+      "type": "double",
+      "attributes": {
+        "long_name": "gll grid areas"
+      },
+      "data":[]
+    },
+    "bc_a1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_a1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a1_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "bc_a1 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a1_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_a1 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_a3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "bc_a3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a4DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_a4 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a4SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a4_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for bc_a4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a4_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "bc_a4 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_a4_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_a4 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_c1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_c1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_c1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_c1 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_c3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_c3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_c3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_c3 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_c4DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_c4 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "bc_c4SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "bc_c4 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ch4vmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "ch4 volume mixing ratio"
+      },
+      "data":[]
+    },
+    "chla": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "mg L-1",
+        "long_name": "ocean input data: chla",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "co2vmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "co2 volume mixing ratio"
+      },
+      "data":[]
+    },
+    "cosp_ht": {
+      "shape": ["cosp_ht"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean Height for lidar and radar simulator outputs",
+        "units": "m",
+        "bounds": "cosp_ht_bnds"
+      },
+      "data":[]
+    },
+    "cosp_ht_bnds": {
+      "shape": ["cosp_ht", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_htmisr": {
+      "shape": ["cosp_htmisr"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP MISR height",
+        "units": "km",
+        "bounds": "cosp_htmisr_bnds"
+      },
+      "data":[]
+    },
+    "cosp_htmisr_bnds": {
+      "shape": ["cosp_htmisr", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_prs": {
+      "shape": ["cosp_prs"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean ISCCP pressure",
+        "units": "hPa",
+        "bounds": "cosp_prs_bnds"
+      },
+      "data":[]
+    },
+    "cosp_prs_bnds": {
+      "shape": ["cosp_prs", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_scol": {
+      "shape": ["cosp_scol"],
+      "type": "int",
+      "attributes": {
+        "long_name": "COSP subcolumn"
+      },
+      "data":[]
+    },
+    "cosp_sr": {
+      "shape": ["cosp_sr"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean Scattering Ratio for lidar simulator CFAD output",
+        "units": "1",
+        "bounds": "cosp_sr_bnds"
+      },
+      "data":[]
+    },
+    "cosp_sr_bnds": {
+      "shape": ["cosp_sr", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_sza": {
+      "shape": ["cosp_sza"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Parasol SZA",
+        "units": "degrees"
+      },
+      "data":[]
+    },
+    "cosp_tau": {
+      "shape": ["cosp_tau"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean ISCCP optical depth",
+        "units": "1",
+        "bounds": "cosp_tau_bnds"
+      },
+      "data":[]
+    },
+    "cosp_tau_bnds": {
+      "shape": ["cosp_tau", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_tau_modis": {
+      "shape": ["cosp_tau_modis"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean MODIS optical depth",
+        "units": "1",
+        "bounds": "cosp_tau_modis_bnds"
+      },
+      "data":[]
+    },
+    "cosp_tau_modis_bnds": {
+      "shape": ["cosp_tau_modis", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "date": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current date (YYYYMMDD)"
+      },
+      "data":[]
+    },
+    "date_written": {
+      "shape": ["time", "chars"],
+      "type": "char",
+      "data":[]
+    },
+    "datesec": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current seconds of current date"
+      },
+      "data":[]
+    },
+    "dst_a1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_a1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_a1SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_a1 dust surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_a1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_a1_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "dst_a1 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_a3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_a3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_a3SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_a3 dust surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_a3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_a3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "dst_a3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_c1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_c1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_c1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_c1 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_c3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_c3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "dst_c3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "dst_c3 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "f11vmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "f11 volume mixing ratio"
+      },
+      "data":[]
+    },
+    "f12vmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "f12 volume mixing ratio"
+      },
+      "data":[]
+    },
+    "hstobie_linoz": {
+      "shape": ["time", "lev", "ncol"],
+      "type": "float",
+      "attributes": {
+        "mdims": 9,
+        "units": "fraction of model time",
+        "long_name": "Lowest possible Linoz level",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "hyai": {
+      "shape": ["ilev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid A coefficient at layer interfaces"
+      },
+      "data":[]
+    },
+    "hyam": {
+      "shape": ["lev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid A coefficient at layer midpoints"
+      },
+      "data":[]
+    },
+    "hybi": {
+      "shape": ["ilev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid B coefficient at layer interfaces"
+      },
+      "data":[]
+    },
+    "hybm": {
+      "shape": ["lev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid B coefficient at layer midpoints"
+      },
+      "data":[]
+    },
+    "ilev": {
+      "shape": ["ilev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid level at interfaces (1000*(A+B))",
+        "units": "hPa",
+        "positive": "down",
+        "standard_name": "atmosphere_hybrid_sigma_pressure_coordinate",
+        "formula_terms": "a: hyai b: hybi p0: P0 ps: PS"
+      },
+      "data":[]
+    },
+    "lat": {
+      "shape": ["ncol"],
+      "type": "double",
+      "attributes": {
+        "long_name": "latitude",
+        "units": "degrees_north"
+      },
+      "data":[]
+    },
+    "lev": {
+      "shape": ["lev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid level at midpoints (1000*(A+B))",
+        "units": "hPa",
+        "positive": "down",
+        "standard_name": "atmosphere_hybrid_sigma_pressure_coordinate",
+        "formula_terms": "a: hyam b: hybm p0: P0 ps: PS"
+      },
+      "data":[]
+    },
+    "lon": {
+      "shape": ["ncol"],
+      "type": "double",
+      "attributes": {
+        "long_name": "longitude",
+        "units": "degrees_east"
+      },
+      "data":[]
+    },
+    "mdt": {
+      "type": "int",
+      "attributes": {
+        "long_name": "timestep",
+        "units": "s"
+      },
+      "data":[]
+    },
+    "mlip": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "uM C",
+        "long_name": "ocean input data: mlip",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a1SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a1 seasalt surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a1_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "mom_a1 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a1_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a1 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a2SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a2 seasalt surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a2_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "mom_a2 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "mom_a3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a4DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a4 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a4SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a4 seasalt surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a4SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a4_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "mom_a4 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_a4_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_a4 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_c1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_c1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_c1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_c1 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_c2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_c2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_c2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_c2 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_c3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_c3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_c3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_c3 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_c4DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_c4 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mom_c4SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "mom_c4 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mpoly": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "uM C",
+        "long_name": "ocean input data: mpoly",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "mprot": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "uM C",
+        "long_name": "ocean input data: mprot",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "n2ovmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "n2o volume mixing ratio"
+      },
+      "data":[]
+    },
+    "nbdate": {
+      "type": "int",
+      "attributes": {
+        "long_name": "base date (YYYYMMDD)"
+      },
+      "data":[]
+    },
+    "nbsec": {
+      "type": "int",
+      "attributes": {
+        "long_name": "seconds of base date"
+      },
+      "data":[]
+    },
+    "ncl_a1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a1SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a1 seasalt surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a1_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "ncl_a1 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a2SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a2 seasalt surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a2_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "ncl_a2 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a3SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_a3 seasalt surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_a3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "ncl_a3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_c1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_c1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_c1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_c1 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_c2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_c2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_c2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_c2 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_c3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_c3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ncl_c3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "ncl_c3 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "ndbase": {
+      "type": "int",
+      "attributes": {
+        "long_name": "base day"
+      },
+      "data":[]
+    },
+    "ndcur": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current day (from base day)"
+      },
+      "data":[]
+    },
+    "nsbase": {
+      "type": "int",
+      "attributes": {
+        "long_name": "seconds of base day"
+      },
+      "data":[]
+    },
+    "nscur": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current seconds of current day"
+      },
+      "data":[]
+    },
+    "nsteph": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current timestep"
+      },
+      "data":[]
+    },
+    "num_a1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_a1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a1SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "num_a1 dust surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a1_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for num_a1",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a1_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/kg",
+        "long_name": "num_a1 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a1_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "num_a1 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_a2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a2_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for num_a2",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a2_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/kg",
+        "long_name": "num_a2 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_a3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a3SF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "num_a3 dust surface emission",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/kg",
+        "long_name": "num_a3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a4DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_a4 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a4SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a4_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for num_a4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a4_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/kg",
+        "long_name": "num_a4 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_a4_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "num_a4 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_c1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_c1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_c1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_c1 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_c2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_c2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_c2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_c2 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_c3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_c3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_c3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_c3 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_c4DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_c4 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "num_c4SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": " 1/m2/s",
+        "long_name": "num_c4 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_a1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a1_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "pom_a1 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a1_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_a1 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_a3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "pom_a3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a4DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_a4 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a4SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a4_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for pom_a4",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a4_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "pom_a4 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_a4_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_a4 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_c1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_c1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_c1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_c1 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_c3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_c3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_c3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_c3 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_c4DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_c4 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "pom_c4SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "pom_c4 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a1_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for so4_a1",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a1_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "so4_a1 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a1_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a1 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a2_CLXF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "molec/cm2/s",
+        "long_name": "vertically intergrated external forcing for so4_a2",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a2_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "so4_a2 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a2_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a2 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "so4_a3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_a3_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_a3 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_c1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_c1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_c1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_c1 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_c2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_c2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_c2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_c2 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_c3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_c3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "so4_c3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "so4_c3 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a1_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "soa_a1 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a1_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a1 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a2_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "soa_a2 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a2_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a2 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "Wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a3_SRF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "soa_a3 in bottom layer",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_a3_sfgaex1": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_a3 gas-aerosol-exchange primary column tendency",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_c1DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_c1 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_c1SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_c1 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_c2DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_c2 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_c2SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_c2 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_c3DDF": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_c3 dry deposition flux at bottom (grav + turb)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "soa_c3SFWET": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2/s",
+        "long_name": "soa_c3 wet deposition flux at surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "sol_tsi": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "total solar irradiance",
+        "units": "W/m2"
+      },
+      "data":[]
+    },
+    "time": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "time",
+        "units": "days since 1850-01-01 00:00:00",
+        "calendar": "noleap",
+        "bounds": "time_bnds"
+      },
+      "data":[]
+    },
+    "time_bnds": {
+      "shape": ["time", "nbnd"],
+      "type": "double",
+      "attributes": {
+        "long_name": "time interval endpoints"
+      },
+      "data":[]
+    },
+    "time_written": {
+      "shape": ["time", "chars"],
+      "type": "char",
+      "data":[]
+    }
+  },
+  "attributes": {
+    "ne": 30,
+    "np": 4,
+    "Conventions": "CF-1.0",
+    "source": "CAM",
+    "case": "20191123.CO21PCTBGC_RUBISCO_CNPCTC20TR_OIBGC.I1900.ne30_oECv3.compy",
+    "title": "UNSET",
+    "logname": "xumi699",
+    "host": "",
+    "Version": "$Name$",
+    "revision_Id": "$Id$",
+    "initial_file": "/compyfs/inputdata/atm/cam/inic/homme/cami_mam3_Linoz_ne30np4_L72_c160214.nc",
+    "topography_file": "/compyfs/inputdata/atm/cam/topo/USGS-gtopo30_ne30np4_16xdel2-PFC-consistentSGH.nc",
+    "time_period_freq": "month_1"
+  }
+}

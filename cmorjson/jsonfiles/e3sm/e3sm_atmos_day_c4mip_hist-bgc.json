@@ -1,0 +1,627 @@
+{
+  "dimensions": {
+    "ncol": 48602,
+    "time": 1,
+    "nbnd": 2,
+    "chars": 8,
+    "cosp_prs": 7,
+    "cosp_tau": 7,
+    "cosp_scol": 10,
+    "cosp_ht": 40,
+    "cosp_sr": 15,
+    "cosp_sza": 5,
+    "cosp_htmisr": 16,
+    "cosp_tau_modis": 6,
+    "lev": 72,
+    "ilev": 73
+  },
+  "variables": {
+    "FLUT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "Sampling_Sequence": "rad_lwsw",
+        "units": "W/m2",
+        "long_name": "Upwelling longwave flux at top of model",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "OMEGA500": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "Pa/s",
+        "long_name": "Vertical velocity at 500 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "P0": {
+      "type": "double",
+      "attributes": {
+        "long_name": "reference pressure",
+        "units": "Pa"
+      },
+      "data":[]
+    },
+    "PRECC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Convective precipitation rate (liq + ice)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PRECSC": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Convective snow rate (water equivalent)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PRECSL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Large-scale (stable) snow rate (water equivalent)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PRECT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Total (convective and large-scale) precipitation rate (liq + ice)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "Pa",
+        "long_name": "Surface pressure",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "PSL": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "Pa",
+        "long_name": "Sea level pressure",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "QREFHT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/kg",
+        "long_name": "Reference height humidity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "RHREFHT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "fraction",
+        "long_name": "Reference height relative humidity",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SNOWHICE": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m",
+        "long_name": "Snow depth over ice",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "SNOWHLND": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m",
+        "long_name": "Water equivalent snow depth",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TMQ": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "kg/m2",
+        "long_name": "Total (vertically integrated) precipitable water",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TREFHT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Reference height temperature",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "TREFHTMN": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Minimum reference height temperature over output period",
+        "cell_methods": "time: minimum"
+      },
+      "data":[]
+    },
+    "TREFHTMX": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Maximum reference height temperature over output period",
+        "cell_methods": "time: maximum"
+      },
+      "data":[]
+    },
+    "TS": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "K",
+        "long_name": "Surface temperature (radiative)",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "U200": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Zonal wind at 200 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "U850": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Zonal wind at 850 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "UBOT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Lowest model level zonal wind",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "V200": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Meridional wind at 200 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "V850": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Meridional wind at 850 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "VBOT": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m/s",
+        "long_name": "Lowest model level meridional wind",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "Z500": {
+      "shape": ["time", "ncol"],
+      "type": "float",
+      "attributes": {
+        "units": "m",
+        "long_name": "Geopotential Z at 500 mbar pressure surface",
+        "cell_methods": "time: mean"
+      },
+      "data":[]
+    },
+    "area": {
+      "shape": ["ncol"],
+      "type": "double",
+      "attributes": {
+        "long_name": "gll grid areas"
+      },
+      "data":[]
+    },
+    "ch4vmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "ch4 volume mixing ratio"
+      },
+      "data":[]
+    },
+    "co2vmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "co2 volume mixing ratio"
+      },
+      "data":[]
+    },
+    "cosp_ht": {
+      "shape": ["cosp_ht"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean Height for lidar and radar simulator outputs",
+        "units": "m",
+        "bounds": "cosp_ht_bnds"
+      },
+      "data":[]
+    },
+    "cosp_ht_bnds": {
+      "shape": ["cosp_ht", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_htmisr": {
+      "shape": ["cosp_htmisr"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP MISR height",
+        "units": "km",
+        "bounds": "cosp_htmisr_bnds"
+      },
+      "data":[]
+    },
+    "cosp_htmisr_bnds": {
+      "shape": ["cosp_htmisr", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_prs": {
+      "shape": ["cosp_prs"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean ISCCP pressure",
+        "units": "hPa",
+        "bounds": "cosp_prs_bnds"
+      },
+      "data":[]
+    },
+    "cosp_prs_bnds": {
+      "shape": ["cosp_prs", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_scol": {
+      "shape": ["cosp_scol"],
+      "type": "int",
+      "attributes": {
+        "long_name": "COSP subcolumn"
+      },
+      "data":[]
+    },
+    "cosp_sr": {
+      "shape": ["cosp_sr"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean Scattering Ratio for lidar simulator CFAD output",
+        "units": "1",
+        "bounds": "cosp_sr_bnds"
+      },
+      "data":[]
+    },
+    "cosp_sr_bnds": {
+      "shape": ["cosp_sr", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_sza": {
+      "shape": ["cosp_sza"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Parasol SZA",
+        "units": "degrees"
+      },
+      "data":[]
+    },
+    "cosp_tau": {
+      "shape": ["cosp_tau"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean ISCCP optical depth",
+        "units": "1",
+        "bounds": "cosp_tau_bnds"
+      },
+      "data":[]
+    },
+    "cosp_tau_bnds": {
+      "shape": ["cosp_tau", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "cosp_tau_modis": {
+      "shape": ["cosp_tau_modis"],
+      "type": "double",
+      "attributes": {
+        "long_name": "COSP Mean MODIS optical depth",
+        "units": "1",
+        "bounds": "cosp_tau_modis_bnds"
+      },
+      "data":[]
+    },
+    "cosp_tau_modis_bnds": {
+      "shape": ["cosp_tau_modis", "nbnd"],
+      "type": "double",
+      "data":[]
+    },
+    "date": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current date (YYYYMMDD)"
+      },
+      "data":[]
+    },
+    "date_written": {
+      "shape": ["time", "chars"],
+      "type": "char",
+      "data":[]
+    },
+    "datesec": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current seconds of current date"
+      },
+      "data":[]
+    },
+    "f11vmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "f11 volume mixing ratio"
+      },
+      "data":[]
+    },
+    "f12vmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "f12 volume mixing ratio"
+      },
+      "data":[]
+    },
+    "hyai": {
+      "shape": ["ilev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid A coefficient at layer interfaces"
+      },
+      "data":[]
+    },
+    "hyam": {
+      "shape": ["lev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid A coefficient at layer midpoints"
+      },
+      "data":[]
+    },
+    "hybi": {
+      "shape": ["ilev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid B coefficient at layer interfaces"
+      },
+      "data":[]
+    },
+    "hybm": {
+      "shape": ["lev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid B coefficient at layer midpoints"
+      },
+      "data":[]
+    },
+    "ilev": {
+      "shape": ["ilev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid level at interfaces (1000*(A+B))",
+        "units": "hPa",
+        "positive": "down",
+        "standard_name": "atmosphere_hybrid_sigma_pressure_coordinate",
+        "formula_terms": "a: hyai b: hybi p0: P0 ps: PS"
+      },
+      "data":[]
+    },
+    "lat": {
+      "shape": ["ncol"],
+      "type": "double",
+      "attributes": {
+        "long_name": "latitude",
+        "units": "degrees_north"
+      },
+      "data":[]
+    },
+    "lev": {
+      "shape": ["lev"],
+      "type": "double",
+      "attributes": {
+        "long_name": "hybrid level at midpoints (1000*(A+B))",
+        "units": "hPa",
+        "positive": "down",
+        "standard_name": "atmosphere_hybrid_sigma_pressure_coordinate",
+        "formula_terms": "a: hyam b: hybm p0: P0 ps: PS"
+      },
+      "data":[]
+    },
+    "lon": {
+      "shape": ["ncol"],
+      "type": "double",
+      "attributes": {
+        "long_name": "longitude",
+        "units": "degrees_east"
+      },
+      "data":[]
+    },
+    "mdt": {
+      "type": "int",
+      "attributes": {
+        "long_name": "timestep",
+        "units": "s"
+      },
+      "data":[]
+    },
+    "n2ovmr": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "n2o volume mixing ratio"
+      },
+      "data":[]
+    },
+    "nbdate": {
+      "type": "int",
+      "attributes": {
+        "long_name": "base date (YYYYMMDD)"
+      },
+      "data":[]
+    },
+    "nbsec": {
+      "type": "int",
+      "attributes": {
+        "long_name": "seconds of base date"
+      },
+      "data":[]
+    },
+    "ndbase": {
+      "type": "int",
+      "attributes": {
+        "long_name": "base day"
+      },
+      "data":[]
+    },
+    "ndcur": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current day (from base day)"
+      },
+      "data":[]
+    },
+    "nsbase": {
+      "type": "int",
+      "attributes": {
+        "long_name": "seconds of base day"
+      },
+      "data":[]
+    },
+    "nscur": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current seconds of current day"
+      },
+      "data":[]
+    },
+    "nsteph": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current timestep"
+      },
+      "data":[]
+    },
+    "sol_tsi": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "total solar irradiance",
+        "units": "W/m2"
+      },
+      "data":[]
+    },
+    "time": {
+      "shape": ["time"],
+      "type": "double",
+      "attributes": {
+        "long_name": "time",
+        "units": "days since 1850-01-01 00:00:00",
+        "calendar": "noleap",
+        "bounds": "time_bnds"
+      },
+      "data":[]
+    },
+    "time_bnds": {
+      "shape": ["time", "nbnd"],
+      "type": "double",
+      "attributes": {
+        "long_name": "time interval endpoints"
+      },
+      "data":[]
+    },
+    "time_written": {
+      "shape": ["time", "chars"],
+      "type": "char",
+      "data":[]
+    }
+  },
+  "attributes": {
+    "ne": 30,
+    "np": 4,
+    "Conventions": "CF-1.0",
+    "source": "CAM",
+    "case": "20181217.BDRD_CNPCTC20TR_OIBGC.ne30_oECv3.edison",
+    "title": "UNSET",
+    "logname": "shix",
+    "host": "edison07",
+    "Version": "$Name$",
+    "revision_Id": "$Id$",
+    "initial_file": "20181130_BCRC_1850SPINUP_OIBGC.ne30_oECv3.edison.cam.i.0370-01-01-00000.nc",
+    "topography_file": "/project/projectdirs/acme/inputdata/atm/cam/topo/USGS-gtopo30_ne30np4_16xdel2-PFC-consistentSGH.nc",
+    "time_period_freq": "day_1"
+  }
+}

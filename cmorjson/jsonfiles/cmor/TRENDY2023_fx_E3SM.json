@@ -1,0 +1,638 @@
+{
+    "header": {
+        "library": "worksheet",
+        "numvars": 8,
+        "preparedby": "Min Xu",
+        "version": "0.0"
+    },
+    "variables": [
+
+        {   
+            "_children": [],
+            "attributes": {
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean",
+                "comment": "Percentage of horizontal area occupied by land.",
+                "description": "land mask.",
+                "frequency": "fx",
+                "id": "landmask",
+                "longname": "land_mask",
+                "mip": [
+                    "DCPP",
+                    "PMIP",
+                    "CFMIP",
+                    "AerChemMIP",
+                    "CMIP",
+                    "PAMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "atmos",
+                "out_name": "landmask",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "fx ((isd.003))",
+                "standard_name": "land mask",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "int",
+                "units": "",
+                "variable_id": "landmask"
+            },
+            "cmvar": "landmask",
+            "confidence": "90",
+            "dimensions": {
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude"
+                ]
+            },
+            "id": 0,
+            "relationship": "landmask"
+        },
+
+
+        {
+            "_children": [],
+            "attributes": {
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean",
+                "comment": "Percentage of horizontal area occupied by land.",
+                "description": "Percentage of horizontal area occupied by land.",
+                "frequency": "fx",
+                "id": "sftlf",
+                "longname": "Percentage of the Grid Cell Occupied by Land (Including Lakes)",
+                "mip": [
+                    "DCPP",
+                    "PMIP",
+                    "CFMIP",
+                    "AerChemMIP",
+                    "CMIP",
+                    "PAMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "atmos",
+                "out_name": "sftlf",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "fx ((isd.003))",
+                "standard_name": "land_area_fraction",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "real",
+                "units": "%",
+                "variable_id": "sftlf"
+            },
+            "cmvar": "sftlf",
+            "confidence": "90",
+            "dimensions": {
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude"
+                ]
+            },
+            "id": 0,
+            "relationship": "landfrac"
+        },
+        {
+            "_children": [],
+            "attributes": {
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land",
+                "comment": "reported \"where land\": divide the total water holding capacity of all the soil in the grid cell by the land area in the grid cell;  reported as \"missing\" where the land fraction is 0.",
+                "description": "The bulk water content retained by the soil at -33 J/kg of suction pressure, expressed as mass per unit land area; report as missing where there is no land",
+                "frequency": "fx",
+                "id": "mrsofc",
+                "longname": "Capacity of Soil to Store Water (Field Capacity)",
+                "mip": [
+                    "LS3MIP",
+                    "DCPP",
+                    "PMIP",
+                    "CMIP",
+                    "PAMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "land",
+                "out_name": "mrsofc",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "fx ((isd.003))",
+                "standard_name": "soil_moisture_content_at_field_capacity",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "real",
+                "units": "kg m-2",
+                "variable_id": "mrsofc"
+            },
+            "cmvar": "mrsofc",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude"
+                ]
+            },
+            "id": 1,
+            "relationship": ""
+        },
+        {
+            "_children": [],
+            "attributes": {
+                "cell_measures": "",
+                "cell_methods": "area: sum",
+                "comment": "Cell areas for any grid used to report river model variables (may be the same as for atmospheric variables). These cell areas should be defined to enable exact calculation of area integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere).",
+                "description": "For river routing model, if grid differs from the atmospheric grid.",
+                "frequency": "fx",
+                "id": "areacellr",
+                "longname": "Grid-Cell Area for River Model Variables",
+                "mip": [
+                    "DCPP",
+                    "PMIP",
+                    "CMIP",
+                    "PAMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "land",
+                "out_name": "areacellr",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "fx ((isd.003))",
+                "standard_name": "cell_area",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "real",
+                "units": "m2",
+                "variable_id": "areacellr"
+            },
+            "cmvar": "areacellr",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude"
+                ]
+            },
+            "id": 2,
+            "relationship": ""
+        },
+        {
+            "_children": [],
+            "attributes": {
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean",
+                "comment": "Provide only if altitude of full model levels is fixed",
+                "description": "Height of full model levels above a reference ellipsoid. A reference ellipsoid is a mathematical figure that approximates the geoid. The geoid is a surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. The ellipsoid is an approximation because the geoid is an irregular shape. A number of reference ellipsoids are defined for use in the field of geodesy. To specify which reference ellipsoid is being used, a grid_mapping variable should be attached to the data variable as described in Chapter 5.6 of the CF Convention.",
+                "frequency": "fx",
+                "id": "zfull",
+                "longname": "Altitude of Model Full-Levels",
+                "mip": [
+                    "CMIP",
+                    "CFMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "atmos",
+                "out_name": "zfull",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "scanDreq.py",
+                "standard_name": "height_above_reference_ellipsoid",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "real",
+                "units": "m",
+                "variable_id": "zfull"
+            },
+            "cmvar": "zfull",
+            "confidence": 0,
+            "dimensions": {
+                "alevel": {
+                    "axis": "Z",
+                    "bounds": "lev_bnds",
+                    "direction": "",
+                    "out_name": "lev",
+                    "title": "alevel",
+                    "type": "double",
+                    "units": ""
+                },
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude",
+                    "dim:alevel"
+                ]
+            },
+            "id": 3,
+            "relationship": ""
+        },
+        {
+            "_children": [],
+            "attributes": {
+                "cell_measures": "",
+                "cell_methods": "area: sum",
+                "comment": "Cell areas for any grid used to report atmospheric variables and any other variable using that grid (e.g., soil moisture content). These cell areas should be defined to enable exact calculation of global integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere).",
+                "description": "For atmospheres with more than 1 mesh (e.g., staggered grids), report areas that apply to surface vertical fluxes of energy.",
+                "frequency": "fx",
+                "id": "areacella",
+                "longname": "Grid-Cell Area for Atmospheric Grid Variables",
+                "mip": [
+                    "LS3MIP",
+                    "DCPP",
+                    "AerChemMIP",
+                    "CFMIP",
+                    "PMIP",
+                    "CMIP",
+                    "PAMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "atmos land",
+                "out_name": "areacella",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "fx ((isd.003))",
+                "standard_name": "cell_area",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "real",
+                "units": "m2",
+                "variable_id": "areacella"
+            },
+            "cmvar": "areacella",
+            "confidence": "90",
+            "dimensions": {
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude"
+                ]
+            },
+            "id": 4,
+            "relationship": "area"
+        },
+        {
+            "_children": [],
+            "attributes": {
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean",
+                "comment": "height above the geoid; as defined here, \"the geoid\" is a surface of constant geopotential that, if the ocean were at rest, would coincide with mean sea level. Under this definition, the geoid changes as the mean volume of the ocean changes (e.g., due to glacial melt, or global warming of the ocean).  Reported here is the height above the present-day geoid (0.0 over ocean).",
+                "description": "The surface called \"surface\" means the lower boundary of the atmosphere. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.",
+                "frequency": "fx",
+                "id": "orog",
+                "longname": "Surface Altitude",
+                "mip": [
+                    "LS3MIP",
+                    "DCPP",
+                    "PMIP",
+                    "CFMIP",
+                    "AerChemMIP",
+                    "CMIP",
+                    "PAMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "land",
+                "out_name": "orog",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "fx ((isd.003))",
+                "standard_name": "surface_altitude",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "real",
+                "units": "m",
+                "variable_id": "orog"
+            },
+            "cmvar": "orog",
+            "confidence": "90",
+            "dimensions": {
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude"
+                ]
+            },
+            "id": 5,
+            "relationship": "ZBOT"
+        },
+        {
+            "_children": [],
+            "attributes": {
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean",
+                "comment": "report the maximum soil depth reachable by plant roots (if defined in model), i.e., the maximum soil depth from which they can extract moisture; report as \"missing\" where the land fraction is 0.",
+                "description": "report the maximum soil depth reachable by plant roots (if defined in model), i.e., the maximum soil depth from which they can extract moisture; report as *missing* where the land fraction is 0.",
+                "frequency": "fx",
+                "id": "rootd",
+                "longname": "Maximum Root Depth",
+                "mip": [
+                    "LS3MIP",
+                    "DCPP",
+                    "PMIP",
+                    "CMIP",
+                    "PAMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "land",
+                "out_name": "rootd",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "fx ((isd.003))",
+                "standard_name": "root_depth",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "real",
+                "units": "m",
+                "variable_id": "rootd"
+            },
+            "cmvar": "rootd",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude"
+                ]
+            },
+            "id": 6,
+            "relationship": ""
+        },
+        {
+            "_children": [],
+            "attributes": {
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean",
+                "comment": "fraction of grid cell occupied by \"permanent\" ice (i.e., glaciers).",
+                "description": "Percentage of grid cell covered by land ice (ice sheet, ice shelf, ice cap, glacier)",
+                "frequency": "fx",
+                "id": "sftgif",
+                "longname": "Land Ice Area Percentage",
+                "mip": [
+                    "LS3MIP",
+                    "DCPP",
+                    "ISMIP6",
+                    "PMIP",
+                    "CMIP",
+                    "PAMIP"
+                ],
+                "miptable": "fx",
+                "modeling_realm": "land",
+                "out_name": "sftgif",
+                "positive": "",
+                "priority": [
+                    1
+                ],
+                "prov": "fx ((isd.003))",
+                "standard_name": "land_ice_area_fraction",
+                "time": "",
+                "time_label": "None",
+                "time_title": "No temporal dimensions ... fixed field",
+                "type": "real",
+                "units": "%",
+                "variable_id": "sftgif"
+            },
+            "cmvar": "sftgif",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "axis": "Y",
+                    "bounds": "lat_bnds",
+                    "direction": "increasing",
+                    "out_name": "lat",
+                    "standard_name": "latitude",
+                    "title": "latitude",
+                    "type": "double",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "valid_min": -90
+                },
+                "longitude": {
+                    "axis": "X",
+                    "bounds": "lon_bnds",
+                    "direction": "increasing",
+                    "out_name": "lon",
+                    "standard_name": "longitude",
+                    "title": "longitude",
+                    "type": "double",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "valid_min": 0
+                },
+                "shape": [
+                    "dim:longitude",
+                    "dim:latitude"
+                ]
+            },
+            "id": 7,
+            "relationship": ""
+        }
+    ]
+}

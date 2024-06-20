@@ -1,0 +1,365 @@
+{
+  "dimensions": {
+    "lon": 720,
+    "lat": 360,
+    "string_length": 8,
+    "hist_interval": 2,
+    "time": 1
+  },
+  "variables": {
+    "DIRECT_DISCHARGE_TO_OCEAN_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART direct discharge into ocean: ICE",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "DIRECT_DISCHARGE_TO_OCEAN_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART direct discharge into ocean: LIQ",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QDTO_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART input direct to ocean runoff: ICE",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QDTO_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART input direct to ocean runoff: LIQ",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QGWL_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART input GWL runoff: ICE",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QGWL_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART input GWL runoff: LIQ",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QSUB_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART input subsurface runoff: ICE",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QSUB_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART input subsurface runoff: LIQ",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QSUR_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART input surface runoff: ICE",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "QSUR_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART input surface runoff: LIQ",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RIVER_DISCHARGE_OVER_LAND_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART river basin flow: ICE",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RIVER_DISCHARGE_OVER_LAND_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART river basin flow: LIQ",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RIVER_DISCHARGE_TO_OCEAN_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART river discharge into ocean: ICE",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "RIVER_DISCHARGE_TO_OCEAN_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART river discharge into ocean: LIQ",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "STORAGE_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART storage: ICE",
+        "units": "m3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "STORAGE_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART storage: LIQ",
+        "units": "m3",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTAL_DISCHARGE_TO_OCEAN_ICE": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART total discharge into ocean: ICE",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "TOTAL_DISCHARGE_TO_OCEAN_LIQ": {
+      "shape": ["time", "lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "MOSART total discharge into ocean: LIQ",
+        "units": "m3/s",
+        "cell_methods": "time: mean",
+        "_FillValue": 1.0e+36,
+        "missing_value": 1.0e+36
+      },
+      "data":[]
+    },
+    "area": {
+      "shape": ["lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "runoff grid area",
+        "units": "m2"
+      },
+      "data":[]
+    },
+    "areatotal": {
+      "shape": ["lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "basin upstream areatotal",
+        "units": "m2"
+      },
+      "data":[]
+    },
+    "areatotal2": {
+      "shape": ["lat", "lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "computed basin upstream areatotal",
+        "units": "m2"
+      },
+      "data":[]
+    },
+    "date_written": {
+      "shape": ["time", "string_length"],
+      "type": "char",
+      "data":[]
+    },
+    "lat": {
+      "shape": ["lat"],
+      "type": "float",
+      "attributes": {
+        "long_name": "runoff coordinate latitude",
+        "units": "degrees_north"
+      },
+      "data":[]
+    },
+    "lon": {
+      "shape": ["lon"],
+      "type": "float",
+      "attributes": {
+        "long_name": "runoff coordinate longitude",
+        "units": "degrees_east"
+      },
+      "data":[]
+    },
+    "mask": {
+      "shape": ["lat", "lon"],
+      "type": "int",
+      "attributes": {
+        "long_name": "runoff mask",
+        "units": "unitless"
+      },
+      "data":[]
+    },
+    "mcdate": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current date (YYYYMMDD)"
+      },
+      "data":[]
+    },
+    "mcsec": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current seconds of current date",
+        "units": "s"
+      },
+      "data":[]
+    },
+    "mdcur": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current day (from base day)"
+      },
+      "data":[]
+    },
+    "mscur": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "current seconds of current day"
+      },
+      "data":[]
+    },
+    "nstep": {
+      "shape": ["time"],
+      "type": "int",
+      "attributes": {
+        "long_name": "time step"
+      },
+      "data":[]
+    },
+    "time": {
+      "shape": ["time"],
+      "type": "float",
+      "attributes": {
+        "long_name": "time",
+        "units": "days since 1850-01-01 00:00:00",
+        "calendar": "noleap",
+        "bounds": "time_bounds"
+      },
+      "data":[]
+    },
+    "time_bounds": {
+      "shape": ["time", "hist_interval"],
+      "type": "double",
+      "attributes": {
+        "long_name": "history time interval endpoints"
+      },
+      "data":[]
+    },
+    "time_written": {
+      "shape": ["time", "string_length"],
+      "type": "char",
+      "data":[]
+    }
+  },
+  "attributes": {
+    "title": "RTM History file information",
+    "comment": "NOTE: None of the variables are weighted by land fraction!",
+    "Conventions": "CF-1.0",
+    "history": "created on 12/31/19 22:47:14",
+    "source": "Community Land Model CLM4.0",
+    "hostname": "compy",
+    "username": "xumi699",
+    "version": "5d73daa",
+    "revision_id": "$Id: histFileMod.F90 36692 2012-04-27 18:39:55Z tcraig $",
+    "case_title": "UNSET",
+    "case_id": "20191123.CO21PCTBGC_RUBISCO_CNPCTC20TR_OIBGC.I1900.ne30_oECv3.compy",
+    "RTM_input_dataset": "MOSART_global_half_20180721a.nc"
+  }
+}

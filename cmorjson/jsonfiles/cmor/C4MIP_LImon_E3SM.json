@@ -1,0 +1,1083 @@
+{
+    "header": {
+        "version": "0.0",
+        "preparedby": "Min Xu",
+        "library": "worksheet",
+        "numvars": 12
+    },
+    "variables": [
+        {
+            "comment": "",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "",
+            "_children": [],
+            "attributes": {
+                "comment": "The snow and ice sublimation flux is the loss of snow and ice mass resulting from their conversion to water vapor.  Computed as the total sublimation on the land portion of the grid cell divided by the land area in the grid cell; reported as missing for snow-free land regions; reported as missing where the land fraction is 0.",
+                "modeling_realm": "landIce",
+                "variable_id": "sbl",
+                "out_name": "sbl",
+                "description": "The snow and ice sublimation flux is the loss of snow and ice mass per unit area from the surface resulting from their direct conversion to water vapor that enters the atmosphere.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2
+                ],
+                "standard_name": "tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Surface Snow and Ice Sublimation Flux",
+                "units": "kg m-2 s-1",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "ISMIP6",
+                    "GMMIP",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VIACSAB",
+                    "VolMIP",
+                    "FAFMIP",
+                    "PMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "sbl"
+            },
+            "cmvar": "sbl",
+            "id": 0
+        },
+        {
+            "comment": "",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "",
+            "_children": [],
+            "attributes": {
+                "comment": "where land over land: This is the mean thickness of the permafrost layer in the land portion of the grid cell.  Reported as missing in permafrost-free regions.",
+                "modeling_realm": "landIce land",
+                "variable_id": "tpf",
+                "out_name": "tpf",
+                "description": "The mean thickness of the permafrost layer in the land portion of the grid cell.  Reported as zero in permafrost-free regions.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2,
+                    3
+                ],
+                "standard_name": "permafrost_layer_thickness",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Permafrost Layer Thickness",
+                "units": "m",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "GMMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "CDRMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "PMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "tpf"
+            },
+            "cmvar": "tpf",
+            "id": 1
+        },
+        {
+            "comment": "from LS3MIP LS3MIP_LImon_E3SM.json",
+            "confidence": 90,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "SNOBCMSL+SNODSTMSL+SNOOCMSL",
+            "_children": [],
+            "attributes": {
+                "comment": "the entire land portion of the grid cell is considered, with snow soot content set to 0.0 in regions free of snow.",
+                "modeling_realm": "landIce land",
+                "variable_id": "sootsn",
+                "out_name": "sootsn",
+                "description": "the entire land portion of the grid cell is considered, with snow soot content set to 0.0 in regions free of snow.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2
+                ],
+                "standard_name": "soot_content_of_surface_snow",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Snow Soot Content",
+                "units": "kg m-2",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "GMMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "sootsn"
+            },
+            "cmvar": "sootsn",
+            "id": 2
+        },
+        {
+            "comment": "",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "",
+            "_children": [],
+            "attributes": {
+                "comment": "This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as \"missing in regions free of snow on land.",
+                "modeling_realm": "landIce land",
+                "variable_id": "tsn",
+                "out_name": "tsn",
+                "description": "This temperature is averaged over all the snow in the grid cell that rests on land or land ice.  When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.   Reported as missing in regions free of snow on land.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2
+                ],
+                "standard_name": "temperature_in_surface_snow",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean (with samples weighted by snow mass)",
+                "longname": "Snow Internal Temperature",
+                "units": "K",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "ISMIP6",
+                    "GMMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "tsn"
+            },
+            "cmvar": "tsn",
+            "id": 3
+        },
+        {
+            "comment": "from LS3MIP LS3MIP_LImon_E3SM.json",
+            "confidence": 90,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "QSNOMELT",
+            "_children": [],
+            "attributes": {
+                "comment": "Computed as the total surface melt water on the land portion of the grid cell divided by the land area in the grid cell; report as 0.0 for snow-free land regions; report as missing where the land fraction is 0.",
+                "modeling_realm": "landIce land",
+                "variable_id": "snm",
+                "out_name": "snm",
+                "description": "The total surface snow melt rate on the land portion of the grid cell divided by the land area in the grid cell; report as zero for snow-free land regions and missing where there is no land.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2
+                ],
+                "standard_name": "surface_snow_melt_flux",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Surface Snow Melt",
+                "units": "kg m-2 s-1",
+                "mip": [
+                    "DAMIP",
+                    "ISMIP6",
+                    "CMIP",
+                    "LS3MIP",
+                    "LUMIP",
+                    "GMMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "PMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "snm"
+            },
+            "cmvar": "snm",
+            "id": 4
+        },
+        {
+            "comment": "from LS3MIP LS3MIP_LImon_E3SM.json",
+            "confidence": 90,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "SNOWLIQ",
+            "_children": [],
+            "attributes": {
+                "comment": "where land over land: this is computed as the total mass of liquid water contained interstitially within the snow layer of the land portion of a grid cell divided by the area of the land portion of the cell.",
+                "modeling_realm": "landIce land",
+                "variable_id": "lwsnl",
+                "out_name": "lwsnl",
+                "description": "The total mass of liquid water contained interstitially within the whole depth of the snow layer of the land portion of a grid cell divided by the area of the land portion of the cell.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2
+                ],
+                "standard_name": "liquid_water_content_of_surface_snow",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Liquid Water Content of Snow Layer",
+                "units": "kg m-2",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "GMMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "lwsnl"
+            },
+            "cmvar": "lwsnl",
+            "id": 5
+        },
+        {
+            "comment": "",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "",
+            "_children": [],
+            "attributes": {
+                "comment": "When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.  Reported as \"missing in regions free of snow on land.",
+                "modeling_realm": "landIce land",
+                "variable_id": "agesno",
+                "out_name": "agesno",
+                "description": "Age of Snow (when computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.  Reported as missing data in regions free of snow on land.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1
+                ],
+                "standard_name": "age_of_surface_snow",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean (with samples weighted by snow mass)",
+                "longname": "Mean Age of Snow",
+                "units": "day",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "GMMIP",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "PMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "agesno"
+            },
+            "cmvar": "agesno",
+            "id": 6
+        },
+        {
+            "comment": "from LS3MIP LS3MIP_LImon_E3SM.json",
+            "confidence": 90,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "FSNO",
+            "_children": [],
+            "attributes": {
+                "comment": "Fraction of each grid cell that is occupied by snow that rests on land portion of cell.",
+                "modeling_realm": "landIce land",
+                "variable_id": "snc",
+                "out_name": "snc",
+                "description": "Percentage of each grid cell that is occupied by snow that rests on land portion of cell.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    3
+                ],
+                "standard_name": "surface_snow_area_fraction",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: time: mean",
+                "longname": "Snow Area Percentage",
+                "units": "%",
+                "mip": [
+                    "VolMIP",
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "ISMIP6",
+                    "GMMIP",
+                    "PMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "CDRMIP",
+                    "FAFMIP",
+                    "CFMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "snc"
+            },
+            "cmvar": "snc",
+            "id": 7
+        },
+        {
+            "comment": "from LS3MIP LS3MIP_LImon_E3SM.json",
+            "confidence": 90,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "FGR",
+            "_children": [],
+            "attributes": {
+                "comment": "the net downward heat flux from the atmosphere into the snow that lies on land divided by the land area in the grid cell; reported as missing for snow-free land regions or where the land fraction is 0.",
+                "modeling_realm": "landIce land",
+                "variable_id": "hfdsn",
+                "out_name": "hfdsn",
+                "description": "the net downward heat flux from the atmosphere into the snow that lies on land divided by the land area in the grid cell; reported as 0.0 for snow-free land regions or where the land fraction is 0.",
+                "time_title": "Temporal mean",
+                "positive": "down",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1
+                ],
+                "standard_name": "surface_downward_heat_flux_in_snow",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Downward Heat Flux into Snow Where Land over Land",
+                "units": "W m-2",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "GMMIP",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "PMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "hfdsn"
+            },
+            "cmvar": "hfdsn",
+            "id": 8
+        },
+        {
+            "comment": "from LS3MIP LS3MIP_LImon_E3SM.json",
+            "confidence": 90,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "H2OSNO",
+            "_children": [],
+            "attributes": {
+                "comment": "Computed as the mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excluded is snow on vegetation canopy or on sea ice.",
+                "modeling_realm": "landIce land",
+                "variable_id": "snw",
+                "out_name": "snw",
+                "description": "The mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excludes snow on vegetation canopy or on sea ice.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2
+                ],
+                "standard_name": "surface_snow_amount",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Surface Snow Amount",
+                "units": "kg m-2",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "GMMIP",
+                    "PMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "CFMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "snw"
+            },
+            "cmvar": "snw",
+            "id": 9
+        },
+        {
+            "comment": "",
+            "confidence": 0,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "",
+            "_children": [],
+            "attributes": {
+                "comment": "\"where land over land\", i.e., this is the total mass of liquid water contained within the permafrost layer within the land portion of a grid cell divided by the area of the land portion of the cell.",
+                "modeling_realm": "landIce land",
+                "variable_id": "pflw",
+                "out_name": "pflw",
+                "description": "*where land over land*, i.e., this is the total mass of liquid water contained within the permafrost layer within the land portion of a grid cell divided by the area of the land portion of the cell.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2,
+                    3
+                ],
+                "standard_name": "liquid_water_content_of_permafrost_layer",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Liquid Water Content of Permafrost Layer",
+                "units": "kg m-2",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "GMMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "FAFMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "pflw"
+            },
+            "cmvar": "pflw",
+            "id": 10
+        },
+        {
+            "comment": "from LS3MIP LS3MIP_LImon_E3SM.json",
+            "confidence": 90,
+            "dimensions": {
+                "latitude": {
+                    "direction": "increasing",
+                    "title": "latitude",
+                    "type": "double",
+                    "standard_name": "latitude",
+                    "bounds": "lat_bnds",
+                    "valid_min": -90,
+                    "out_name": "lat",
+                    "units": "degrees_north",
+                    "valid_max": 90,
+                    "axis": "Y"
+                },
+                "shape": [
+                    "dim:time",
+                    "dim:longitude",
+                    "dim:latitude"
+                ],
+                "longitude": {
+                    "direction": "increasing",
+                    "title": "longitude",
+                    "type": "double",
+                    "standard_name": "longitude",
+                    "bounds": "lon_bnds",
+                    "valid_min": 0,
+                    "out_name": "lon",
+                    "units": "degrees_east",
+                    "valid_max": 360,
+                    "axis": "X"
+                },
+                "time": {
+                    "direction": "increasing",
+                    "title": "time",
+                    "bounds": "time_bnds",
+                    "standard_name": "time",
+                    "out_name": "time",
+                    "units": "days since ?",
+                    "calendar": "internal",
+                    "type": "double",
+                    "axis": "T"
+                }
+            },
+            "relationship": "SNOWDP",
+            "_children": [],
+            "attributes": {
+                "comment": "where land over land, this is computed as the mean thickness of snow in the land portion of the grid cell (averaging over the entire land portion, including the snow-free fraction).  Reported as missing where the land fraction is 0.",
+                "modeling_realm": "landIce land",
+                "variable_id": "snd",
+                "out_name": "snd",
+                "description": "where land over land, this is computed as the mean thickness of snow in the land portion of the grid cell (averaging over the entire land portion, including the snow-free fraction).  Reported as 0.0 where the land fraction is 0.",
+                "time_title": "Temporal mean",
+                "positive": "",
+                "time": "time",
+                "time_label": "time-mean",
+                "miptable": "LImon",
+                "priority": [
+                    1,
+                    2
+                ],
+                "standard_name": "surface_snow_thickness",
+                "frequency": "mon",
+                "cell_measures": "area: areacella",
+                "cell_methods": "area: mean where land time: mean",
+                "longname": "Snow Depth",
+                "units": "m",
+                "mip": [
+                    "DAMIP",
+                    "LS3MIP",
+                    "CMIP",
+                    "LUMIP",
+                    "PAMIP",
+                    "GMMIP",
+                    "PMIP",
+                    "VIACSAB",
+                    "GeoMIP",
+                    "HighResMIP",
+                    "VolMIP",
+                    "DCPP",
+                    "FAFMIP",
+                    "CFMIP",
+                    "C4MIP"
+                ],
+                "prov": "LImon ((isd.003))",
+                "type": "real",
+                "id": "snd"
+            },
+            "cmvar": "snd",
+            "id": 11
+        }
+    ]
+}
