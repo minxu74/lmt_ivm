@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" />
+   <meta name="google" content="notranslate">
+
+   <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.6.3/dist/js/tabulator.min.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <!--script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script-->
+   <script type="text/javascript" src="https://unpkg.com/github-api/dist/GitHub.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.full.min.js"></script>
+   <script type="text/javascript" src="assets/js/select2.multi-checkboxes.js"></script>
+
+
+   <!--css-->
+   <!--link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"-->
+   <link rel="stylesheet" href="https://unpkg.com/tabulator-tables@4.6.3/dist/css/bootstrap/tabulator_bootstrap4.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css">
+   <link rel="stylesheet" href="assets/css/lmt_ivm.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Courgette|Dancing+Script|Great+Vibes|Lobster+Two|Open+Sans|Pinyon+Script|Satisfy">
+
+<style>
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title{
+	white-space: normal;
+	text-overflow: clip;
+
+}
+.example-table{
+        text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+   <!--h1 id=myh1> Expert review system for cmorizing LS3MIP </h1-->
+
+   <div class = "sample-header">
+      <div class = "sample-header-section">
+         <h1 id=myh1> Expert review system for cmorizing LS3MIP </h1>
+      </div>
+   </div>
+
+   <!--div class="table-controls hidden-xs" style="padding-top:100px; margin:auto; width=50%;"-->
+   <div style="padding-top:20px; margin:auto; width:50%; text-align:center">
+
+      <button id="file-load-trigger"> Refresh Table </button>
+
+      <!--button onclick="window.location.href = 'models/e3sm.html';">E3SM variable list</button-->
+
+      <select id="modelVarlst">
+         <option value="function" selected>Model variables list</option>
+      </select>
+
+
+      <select id="mipTypes" class="mySelect">
+         <option value="C4MIP" selected="selected">C4MIP</option>
+         <option value="LUMIP">LUMIP</option>
+         <option value="LS3MIP">LS3MIP</option>
+      </select>
+
+      <select id="modelTypes" class="mySelect">
+         <option value="E3SM" selected="selected">E3SM</option>
+         <option value="CESM2">CESM</option>
+      </select>
+
+      <select id="mipTable" class="mipSelect">
+         <option value="Amon">Amon</option>
+         <option value="Omon">Omon</option>
+         <option value="Lmon" selected="selected">Lmon</option>
+         <option value="LImon">LImon</option>
+         <option value="Emon">Emon</option>
+         <option value="SImon">SImon</option>
+         <option value="day">day</option>
+         <option value="Oday">Oday</option>
+         <option value="Eday">Eday</option>
+         <option value="EdayZ">EdayZ</option>
+         <option value="SIday">SIday</option>
+         <option value="CFday">CFday</option>
+         <option value="AERday">AERday</option>
+         <option value="fx">fx</option>
+         <option value="Ofx">Ofx</option>
+      </select>
+
+      <select class="info-list" id="mlist" name="states[]" multiple="multiple" style="width:25%">
+         <option></option>
+      </select>
+
+      <label for="filter">Search:</label>
+      <input type="text" id="filter"/>
+   </div>
+
+
+   <div class="sample-section-wrap">
+       <div id="example-table" class="sample-section"></div> 
+   </div>
+
+   <div> <hr> </div>
+
+   <div>
+      <div style="float:left; width:48%; display:inline">
+      <form action="/" method="POST">
+         <!--label for="file">Select the JSON file:</label-->
+         <!--input name="file" id="file" type="file" multiple /-->
+         <label for="commit-title">Commit title (reviewer name: short desc):</label>
+         <input id="commit-title" name="commit-title" type="text" />
+         <input type="submit" value="commit"/>
+      </form>
+      </div>
+
+       <div class="git-commit">
+          <img src='small_loading.gif' class="center"/>
+       </div>
+
+      <div style="float:right; width:20%"> <button id="download-json"> Download </button> </div>
+  
+   </div>
+
+   <script type="text/javascript" src="./assets/js/dist.js"> </script>
+   <script type="text/javascript" src="./assets/js/lmt_ivm.js"> </script>
+</body>
+
+</html>
+

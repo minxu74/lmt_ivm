@@ -1,0 +1,85 @@
+
+.sample-header {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10%;
+}
+
+.sample-header-section {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: blue;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+.sample-section-wrap {
+  position: relative;
+  background-color: white;
+}
+.sample-section {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  height:80vh;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+
+#example-table{
+   border-radius: 10px;
+   text-align: left;
+   border-collapse: collapse;
+   border: 1px solid black;
+}
+
+.tabulator{
+   font-size: 12px;
+   borderColor: "#FFFFFF";
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title{
+   white-space: nowrap;
+   text-overflow: clip;
+   justify-content: center;
+   font-size:12px;
+   font-weight:600;
+   color:black;
+   text-shadow: none;
+}
+
+.tabulator-row .tabulator-cell{
+   border-collapse: separate;
+   border-spacing: 0em;
+   border-right: 0.25px solid black;
+   border-left: 0.25px solid black;
+   border-bottom: 0.25px solid grey;
+   border-top: 0.25px solid grey;
+}
+
+.git-commit
+{
+    height: 30vh; /* to make it responsive */
+    width: 30vw; /* to make it responsive */
+    overflow: hidden; /*to remove scrollbars */
+    z-index: 999999; /*to make it appear on topmost part of the page */
+    display: none;
+    padding-top: 10px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
