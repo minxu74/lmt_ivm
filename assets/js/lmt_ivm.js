@@ -185,7 +185,7 @@ var modVars = [];
 const mapfile = {'Amon':'atmos', 'Lmon':'land'};
 var jsonFiles=[];
 $.ajax({
-	url: "./cmorjson/tree/master/jsonfiles/".concat(mod.toLowerCase()),
+	url: "./cmorjson/jsonfiles/".concat(mod.toLowerCase()),
     headers: {'X-Requested-With':'XMLHttpRequest'},
     success: function (data) {
        $(data).find("a:contains(.json)").each(function(){
