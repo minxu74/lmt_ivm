@@ -90,7 +90,7 @@ var tabOptions = {
        //data loading
        ajaxURL:myurl,
 
-       ajaxConfig = {
+       ajaxConfig: {
            mode:"cors", //set request mode to cors
 	   credentials: "same-origin", //send cookies with the request from the matching origin
 	   headers: {
@@ -99,6 +99,7 @@ var tabOptions = {
 	       "Content-type": 'application/json; charset=utf-8', //set the character encoding of the request
 	       "Access-Control-Allow-Origin": "http://yout-site.com", //the URL origin of the site making the request
            },
+       },
        ajaxContentType:"json", // send parameters to the server as a JSON encoded string
        ajaxResponse:function(url, params, response){
           //url - the URL of the request
@@ -143,7 +144,7 @@ var tabOptions = {
            rowGroups:false, //do not include row groups in download
            columnCalcs:false, //do not include column calculation rows in download
        },
-      columns:[],
+       columns:[]
 };
 
 // select
@@ -181,9 +182,9 @@ else{
    fileJson = mip.concat("_", tab, "_", mod, ".json");
 }
 
-//-xum var myurl=baseurl + "jsonfiles/cmor/" + fileJson + "?t=".concat(curTimeStamp);
+var myurl=baseurl + "jsonfiles/cmor/" + fileJson + "?t=".concat(curTimeStamp);
 //-xum var myurl="https://comclieco.github.io/cmorjson/".concat(mip, "_", tab, "_", mod, ".json?t=",curTimeStamp);
-var myurl="https://raw.githubusercontent.com/comclieco/cmorjson/master/jsonfiles/cmor/".concat(mip, "_", tab, "_", mod, ".json?t=",curTimeStamp);
+//var myurl="https://raw.githubusercontent.com/comclieco/cmorjson/master/jsonfiles/cmor/".concat(mip, "_", tab, "_", mod, ".json?t=",curTimeStamp);
 
 console.log('myurl', myurl);
 
@@ -248,9 +249,6 @@ function findmodVars(jsnUrl, jsnFiles, modName, tabName){
        }
 
        for (jsnfile of jsnFiles){
-
-              console.log(jsnfile, 'json', jsnfile.includes(mapfile[tabName]));
-           
           if ((Object.keys(mapfile).includes(tabName)) && (jsnfile.includes(mapfile[tabName]))) {
 
               $.getJSON(jsnUrl + modName.toLowerCase() + "/" + jsnfile, function( data ){
