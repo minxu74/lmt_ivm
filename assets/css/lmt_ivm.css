@@ -33,6 +33,11 @@ h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 36px;
   margin-bottom: 0px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 #example-table{

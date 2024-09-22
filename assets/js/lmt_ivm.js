@@ -89,6 +89,16 @@ $(document).ready(function() {
 var tabOptions = {
        //data loading
        ajaxURL:myurl,
+
+       ajaxConfig = {
+           mode:"cors", //set request mode to cors
+	   credentials: "same-origin", //send cookies with the request from the matching origin
+	   headers: {
+	       "Accept": "application/json", //tell the server we need JSON back
+	       "X-Requested-With": "XMLHttpRequest", //fix to help some frameworks respond correctly to request
+	       "Content-type": 'application/json; charset=utf-8', //set the character encoding of the request
+	       "Access-Control-Allow-Origin": "http://yout-site.com", //the URL origin of the site making the request
+           },
        ajaxContentType:"json", // send parameters to the server as a JSON encoded string
        ajaxResponse:function(url, params, response){
           //url - the URL of the request
@@ -171,8 +181,9 @@ else{
    fileJson = mip.concat("_", tab, "_", mod, ".json");
 }
 
-var myurl=baseurl + "jsonfiles/cmor/" + fileJson + "?t=".concat(curTimeStamp);
-//var myurl="https://comclieco.github.io/cmorjson/".concat(mip, "_", tab, "_", mod, ".json?t=",curTimeStamp);
+//-xum var myurl=baseurl + "jsonfiles/cmor/" + fileJson + "?t=".concat(curTimeStamp);
+//-xum var myurl="https://comclieco.github.io/cmorjson/".concat(mip, "_", tab, "_", mod, ".json?t=",curTimeStamp);
+var myurl="https://raw.githubusercontent.com/comclieco/cmorjson/master/jsonfiles/cmor/".concat(mip, "_", tab, "_", mod, ".json?t=",curTimeStamp);
 
 console.log('myurl', myurl);
 

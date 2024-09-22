@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" />
+   <meta name="google" content="notranslate">
+
+   <!--script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.6.3/dist/js/tabulator.min.js"></script-->
+   <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <!--script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script-->
+
+
+   <!--css-->
+   <!--link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"-->
+   <!--link rel="stylesheet" href="https://unpkg.com/tabulator-tables@4.6.3/dist/css/bootstrap/tabulator_bootstrap4.min.css"-->
+   <!--link rel="stylesheet" href="https://unpkg.com/tabulator-tables@6.2.5/dist/css/materialize/tabulator_materialize.min.css"-->
+   <link href="https://unpkg.com/tabulator-tables@6.2.5/dist/css/tabulator.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="assets/css/lmt_ivm.css">
+
+<style>
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title{
+	white-space: normal;
+	text-overflow: clip;
+
+}
+.example-table{
+        text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+   <!--h1 id=myh1> Expert review system for cmorizing LS3MIP </h1-->
+
+   <div class = "sample-header">
+      <div class = "sample-header-section">
+         <h1 id=myh1> E3SM Variable List </h1>
+      </div>
+      <div class = "sample-header-section">
+         <h2 id=myh2> File: </h2>
+      </div>
+   </div>
+
+   <div class="table-controls hidden-xs" style="padding-top:5px">
+
+      <!--select id="simTypes" class="mySelect">
+         <option value="C4MIP" selected="selected">C4MIP</option>
+         <option value="LUMIP">LUMIP</option>
+         <option value="LS3MIP">LS3MIP</option>
+      </select-->
+
+      <label for="filter">Search:</label>
+      <input type="text" id="filter"/>
+   </div>
+
+
+   <div class="sample-section-wrap" style="padding-top:5px">
+   <div id="example-table" class="sample-section"></div> </div>
+
+   <div> <hr> </div>
+<script>
+   const urlParams = new URLSearchParams(document.location.search);
+   const myParam = urlParams.get('modjson');
+
+   var tabHead = document.getElementById("myh2");
+
+   tabHead.textContent += myParam;
+
+   var myurl = "cmorjson/jsonfiles/e3sm/" + myParam; 
+
+   var subtabOptions = {
+          //data loading
+          ajaxURL:myurl,
+          ajaxConfig:{
+               mode:"cors", //set request mode to cors
+               credentials: "same-origin", //send cookies with the request from the matching origin
+               headers: {
+                   "Accept": "application/json", //tell the server we need JSON back
+                   "X-Requested-With": "XMLHttpRequest", //fix to help some frameworks respond correctly to request
+                   "Content-type": 'application/json; charset=utf-8', //set the character encoding of the request
+                   "Access-Control-Allow-Origin": "https://lmt.ornl.gov", //the URL origin of the site making the request
+               },
+          },
+          ajaxContentType:"json", // send parameters to the server as a JSON encoded string
+          ajaxResponse:function(url, params, response){
+             //url - the URL of the request
+             //params - the parameters passed with the request
+             //response - the JSON object returned in the body of the response.
+   
+             var tabJson=[];
+   
+             for ( mvar of Object.keys(response.variables) ){
+                 var item = {};
+                 item['mvar'] = mvar; 
+                 if (Object.keys(response.variables[mvar]).includes("attributes")){
+                    item['long_name'] = response.variables[mvar].attributes.long_name;
+                    item['units'] = response.variables[mvar].attributes.units;
+                    item['cell_method'] = response.variables[mvar].attributes.cell_methods;
+                    tabJson.push(item);
+                 }
+             }
+             return tabJson; //return the tableData property of a response json object
+          },
+   
+          height:800,
+          layout:"fitColumns",
+          reactiveData:true, //enable reactive data
+          //layout:"fitData",
+   
+          //autoColumns:true,
+          //placeholder:"Awaiting Data, Please Load File",
+          //footerElement:"<button id='download-json' class='tabulator-footer'>Download JSON</button>",
+          //data:data,
+          dataTree:false,
+          //dataTreeStartExpanded:false,
+          dataTreeStartExpanded:function(row, level){
+             return row.getData().confidence; //expand rows where the "driver" data field is true;
+          },
+          //pagination:"local",
+          //paginationSize:20,
+          groupBy:"miptable",
+          groupToggleElement:"header", //toggle group on click anywhere in the group header
+	  rowHeader:{formatter:"rownum", headerSort:false, hozAlign:"center", resizable:false, frozen:true},
+          columns:[
+             {title:"name", field:"mvar"},
+             {title:"long_name", field:"long_name"},
+             {title:"units", field:"units"},
+             {title:"cell_method", field:"cell_method"},
+          ],
+   };
+
+var subtable = new Tabulator("#example-table", subtabOptions);
+
+//searching function
+var input = document.getElementById("filter");
+input.addEventListener("keyup", function(){
+    var filters = [];
+    var columns = subtable.getColumns();
+    var search = input.value;
+
+    columns.forEach(function(column){
+        filters.push({
+            field:column.getField(),
+            type:"like",
+            value:search,
+        });
+    });
+
+    subtable.setFilter([filters]);
+});
+
+
+
+</script>
+
+</body>
+
+</html>
